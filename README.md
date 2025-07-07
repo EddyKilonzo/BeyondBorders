@@ -4,28 +4,16 @@ A modern, responsive website for Beyond Borders - a refugee-led nonprofit organi
 
 ## 🚀 Tech Stack
 
-### **Frontend Framework**
-- **[Next.js 15.2.4](https://nextjs.org/)** - React framework with App Router
-- **[React 18](https://reactjs.org/)** - Component-based UI library
-- **[TypeScript](https://www.typescriptlang.org/)** - Type-safe JavaScript
-
-### **Styling & UI**
-- **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework
-- **[shadcn/ui](https://ui.shadcn.com/)** - Reusable component library
-- **[Radix UI](https://www.radix-ui.com/)** - Unstyled, accessible UI primitives
-- **[Lucide React](https://lucide.dev/)** - Beautiful & consistent icon library
-
-### **Theming**
-- **[next-themes](https://github.com/pacocoursey/next-themes)** - Dark/Light mode with system preference detection
-- **Custom CSS Variables** - Dynamic theming support
-
-### **Package Manager**
-- **[pnpm](https://pnpm.io/)** - Fast, disk space efficient package manager
-
-### **Development Tools**
-- **[PostCSS](https://postcss.org/)** - CSS processing
-- **[ESLint](https://eslint.org/)** - Code linting
-- **VS Code** - Recommended IDE with custom settings
+![Next.js](https://img.shields.io/badge/Next.js-15.2.4-black?style=for-the-badge&logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Radix UI](https://img.shields.io/badge/Radix_UI-161618?style=for-the-badge&logo=radix-ui&logoColor=white)
+![Lucide](https://img.shields.io/badge/Lucide-F56565?style=for-the-badge&logo=lucide&logoColor=white)
+![pnpm](https://img.shields.io/badge/pnpm-F69220?style=for-the-badge&logo=pnpm&logoColor=white)
+![PostCSS](https://img.shields.io/badge/PostCSS-DD3A0A?style=for-the-badge&logo=postcss&logoColor=white)
+![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
 ## 🎨 Features
 
