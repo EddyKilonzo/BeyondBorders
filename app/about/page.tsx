@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { MobileNav } from "@/components/mobile-nav"
+import { ScrollAnimation } from "@/components/scroll-animation"
 
 export default function AboutPage() {
   return (
@@ -14,8 +15,12 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center space-x-3">
-              <div className="bg-gradient-to-br from-sky-400 to-blue-500 p-2 rounded-xl">
-                <Globe className="h-8 w-8 text-white" />
+              <div className="bg-white p-1 rounded-xl shadow-lg">
+                <img
+                  src="/logo_black_bg.jpg"
+                  alt="Beyond Borders Logo"
+                  className="h-10 w-10 rounded-lg object-cover"
+                />
               </div>
               <div>
                 <span className="text-2xl font-bold bg-gradient-to-r from-white to-sky-400 bg-clip-text text-transparent">
@@ -56,20 +61,16 @@ export default function AboutPage() {
       </nav>
 
       {/* Dynamic Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img
-            src="/placeholder.svg?height=800&width=1600"
-            alt="Our team and community"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-slate-900/90 via-blue-900/70 to-slate-800/80"></div>
-        </div>
-
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-20 left-20 w-64 h-64 bg-sky-400/10 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-20 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        </div>
+      <section 
+        className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-cover bg-center bg-fixed bg-no-repeat"
+        style={{
+          backgroundImage: 'url("/2.webp")',
+          backgroundAttachment: 'fixed',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center 30%',
+        }}
+      >
+        <div className="absolute inset-0 bg-black/60"></div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center mb-8 animate-slide-in-left">
@@ -85,7 +86,7 @@ export default function AboutPage() {
             </Button>
           </div>
 
-          <div className="text-center animate-slide-up">
+          <ScrollAnimation direction="bottom" className="text-center">
             <Badge className="mb-6 bg-sky-400/20 text-sky-400 border-sky-400/30 backdrop-blur-sm">
               <Award className="w-4 h-4 mr-2" />
               Our Story
@@ -98,7 +99,7 @@ export default function AboutPage() {
               A <span className="text-sky-400 font-semibold">refugee-led nonprofit</span> bridging gaps in aid and
               advocacy, transforming lives through community-driven solutions.
             </p>
-          </div>
+          </ScrollAnimation>
         </div>
       </section>
 
@@ -106,7 +107,7 @@ export default function AboutPage() {
       <section className="py-20 bg-gradient-to-br from-card to-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="animate-slide-in-left">
+            <ScrollAnimation direction="left">
               <Badge className="mb-6 bg-primary/10 text-primary border-primary/20">
                 <Target className="w-4 h-4 mr-2" />
                 Our Vision
@@ -126,12 +127,12 @@ export default function AboutPage() {
                 <Badge className="bg-blue-600/20 text-muted-foreground border-blue-600/30 px-4 py-2">Sustainable Impact</Badge>
                 <Badge className="bg-primary/10 text-primary border-primary/20 px-4 py-2">Systemic Change</Badge>
               </div>
-            </div>
-            <div className="animate-slide-in-right">
+            </ScrollAnimation>
+            <ScrollAnimation direction="right">
               <div className="relative">
                 <img
-                  src="/placeholder.svg?height=500&width=700"
-                  alt="Community empowerment meeting"
+                  src="/3.webp"
+                  alt="Community empowerment meeting and leadership"
                   className="rounded-3xl shadow-2xl w-full h-80 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/20 to-transparent rounded-3xl"></div>
@@ -142,16 +143,24 @@ export default function AboutPage() {
                   </div>
                 </div>
               </div>
-            </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
 
       {/* Approach Section */}
-      <section className="py-20 bg-slate-900 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-blue-600 to-slate-900 animate-gradient"></div>
+      <section 
+        className="py-20 bg-cover bg-center bg-fixed bg-no-repeat relative overflow-hidden"
+        style={{
+          backgroundImage: 'url("/4.webp")',
+          backgroundAttachment: 'fixed',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center center',
+        }}
+      >
+        <div className="absolute inset-0 bg-black/70"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <ScrollAnimation direction="bottom" className="text-center mb-16">
             <Badge className="mb-4 bg-white/10 text-white border-white/20 backdrop-blur-sm">Our Methodology</Badge>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Our <span className="text-sky-400">Approach</span>
@@ -159,42 +168,38 @@ export default function AboutPage() {
             <p className="text-xl text-white/80 max-w-3xl mx-auto">
               Combining grassroots wisdom with strategic action for maximum impact
             </p>
-          </div>
-
-          <div className="mb-12 text-center">
-            <img
-              src="/placeholder.svg?height=400&width=1000"
-              alt="Team collaboration"
-              className="rounded-3xl shadow-2xl mx-auto h-64 w-full max-w-4xl object-cover"
-            />
-          </div>
+          </ScrollAnimation>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="bg-white/10 backdrop-blur-sm border border-white/20 modern-card-hover shadow-2xl hover:shadow-sky-500/25 hover:-translate-y-2 transition-all duration-300">
-              <CardContent className="p-8">
-                <div className="bg-gradient-to-br from-sky-400 to-blue-500 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
-                  <Users className="h-8 w-8 text-white" />
-                </div>
-                <h3 className="text-2xl font-bold text-white mb-4">Community-Designed Programs</h3>
-                <p className="text-white/80 leading-relaxed">
-                  Our programs are designed by and for the communities we serve, ensuring they address real needs and
-                  build on existing strengths while fostering local ownership.
-                </p>
-              </CardContent>
-            </Card>
+            <ScrollAnimation direction="left">
+              <Card className="bg-white/10 backdrop-blur-sm border border-white/20 modern-card-hover shadow-2xl hover:shadow-sky-500/25 hover:-translate-y-2 transition-all duration-300">
+                <CardContent className="p-8">
+                  <div className="bg-gradient-to-br from-sky-400 to-blue-500 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                    <Users className="h-8 w-8 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-white mb-4">Community-Designed Programs</h3>
+                  <p className="text-white/80 leading-relaxed">
+                    Our programs are designed by and for the communities we serve, ensuring they address real needs and
+                    build on existing strengths while fostering local ownership.
+                  </p>
+                </CardContent>
+              </Card>
+            </ScrollAnimation>
 
-            <Card className="bg-white/10 backdrop-blur-sm border border-white/20 modern-card-hover shadow-2xl hover:shadow-sky-500/25 hover:-translate-y-2 transition-all duration-300">
-              <CardContent className="p-8">
-                <div className="bg-gradient-to-br from-blue-600 to-slate-900 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
-                  <Globe className="h-8 w-8 text-white" />
-                </div>
-                <h3 className="text-2xl font-bold text-white mb-4">Systemic Change</h3>
-                <p className="text-white/80 leading-relaxed">
-                  We work to address root causes of displacement and marginalization through advocacy, policy change,
-                  and building sustainable systems for long-term impact.
-                </p>
-              </CardContent>
-            </Card>
+            <ScrollAnimation direction="right">
+              <Card className="bg-white/10 backdrop-blur-sm border border-white/20 modern-card-hover shadow-2xl hover:shadow-sky-500/25 hover:-translate-y-2 transition-all duration-300">
+                <CardContent className="p-8">
+                  <div className="bg-gradient-to-br from-blue-600 to-slate-900 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                    <Globe className="h-8 w-8 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-white mb-4">Systemic Change</h3>
+                  <p className="text-white/80 leading-relaxed">
+                    We work to address root causes of displacement and marginalization through advocacy, policy change,
+                    and building sustainable systems for long-term impact.
+                  </p>
+                </CardContent>
+              </Card>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
@@ -202,7 +207,7 @@ export default function AboutPage() {
       {/* Values Section */}
       <section className="py-20 bg-gradient-to-br from-background to-card">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <ScrollAnimation direction="bottom" className="text-center mb-16">
             <Badge className="mb-4 bg-primary/10 text-primary border-primary/20">Core Values</Badge>
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               What{" "}
@@ -210,7 +215,7 @@ export default function AboutPage() {
                 Drives Us
               </span>
             </h2>
-          </div>
+          </ScrollAnimation>
 
           <div className="grid md:grid-cols-2 gap-8">
             {[
@@ -243,10 +248,10 @@ export default function AboutPage() {
                 color: "from-blue-600 to-slate-900",
               },
             ].map((value, index) => (
-              <Card
-                key={index}
-                className="modern-card-hover bg-card border-0 shadow-2xl hover:shadow-sky-500/25 dark:hover:shadow-sky-400/25 overflow-hidden group hover:-translate-y-2 transition-all duration-300"
-              >
+              <ScrollAnimation key={index} direction={index % 2 === 0 ? "left" : "right"} delay={index * 200}>
+                <Card
+                  className="modern-card-hover bg-card border-0 shadow-2xl hover:shadow-sky-500/25 dark:hover:shadow-sky-400/25 overflow-hidden group hover:-translate-y-2 transition-all duration-300"
+                >
                 <CardContent className="p-8 flex items-start space-x-6">
                   <div
                     className={`bg-gradient-to-br ${value.color} w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300`}
@@ -259,6 +264,7 @@ export default function AboutPage() {
                   </div>
                 </CardContent>
               </Card>
+            </ScrollAnimation>
             ))}
           </div>
         </div>
@@ -308,8 +314,12 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-4 gap-8 mb-12">
             <div className="md:col-span-2">
               <div className="flex items-center space-x-3 mb-6">
-                <div className="bg-sky-400 p-3 rounded-xl">
-                  <Globe className="h-8 w-8 text-white" />
+                <div className="bg-white p-1 rounded-xl shadow-lg">
+                  <img
+                    src="/logo_black_bg.jpg"
+                    alt="Beyond Borders Logo"
+                    className="h-10 w-10 rounded-lg object-cover"
+                  />
                 </div>
                 <div>
                   <span className="text-2xl font-bold">Beyond Borders</span>

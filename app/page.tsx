@@ -33,8 +33,12 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center space-x-3">
-              <div className="bg-gradient-to-br from-sky-400 to-blue-500 p-2 rounded-xl">
-                <Globe className="h-8 w-8 text-white" />
+              <div className="bg-white p-1 rounded-xl shadow-lg">
+                <img
+                  src="/logo_black_bg.jpg"
+                  alt="Beyond Borders Logo"
+                  className="h-10 w-10 rounded-lg object-cover"
+                />
               </div>
               <div>
                 <span className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-white to-sky-400 bg-clip-text text-transparent">
@@ -75,27 +79,17 @@ export default function HomePage() {
       </nav>
 
       {/* Revolutionary Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background Image with Overlay */}
-        <div className="absolute inset-0 z-0">
-          <img
-            src="/placeholder.svg?height=1080&width=1920"
-            alt="Community empowerment"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-slate-900/90 via-blue-900/70 to-slate-800/80"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
-        </div>
-
-        {/* Animated Background Elements */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-20 left-4 sm:left-20 w-48 sm:w-72 h-48 sm:h-72 bg-sky-400/10 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-4 sm:right-20 w-64 sm:w-96 h-64 sm:h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-          <div
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[200px] sm:w-[400px] lg:w-[600px] h-[200px] sm:h-[400px] lg:h-[600px] bg-gradient-to-r from-sky-400/5 to-blue-500/5 rounded-full blur-3xl animate-spin"
-            style={{ animationDuration: "20s" }}
-          ></div>
-        </div>
+      <section 
+        className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center bg-fixed bg-no-repeat"
+        style={{
+          backgroundImage: 'url("/2.webp")',
+          backgroundAttachment: 'fixed',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center 30%',
+        }}
+      >
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/60"></div>
 
         {/* Hero Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -274,8 +268,8 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             {[
               {
-                src: "/placeholder.svg?height=400&width=600",
-                alt: "Vocational training session",
+                src: "/2.webp",
+                alt: "Vocational training and skills development",
                 title: "Skills Development",
                 description: "Training programs building economic independence",
                 category: "Economic Justice",
@@ -283,8 +277,8 @@ export default function HomePage() {
                 delay: 0,
               },
               {
-                src: "/placeholder.svg?height=400&width=600",
-                alt: "Community meeting",
+                src: "/3.webp",
+                alt: "Community engagement and leadership",
                 title: "Community Engagement",
                 description: "Local leaders discussing social justice initiatives",
                 category: "Social Justice",
@@ -292,8 +286,8 @@ export default function HomePage() {
                 delay: 200,
               },
               {
-                src: "/placeholder.svg?height=400&width=600",
-                alt: "Agricultural project",
+                src: "/po2.jpg",
+                alt: "Agricultural and climate resilience projects",
                 title: "Climate Resilience",
                 description: "Drought-resistant farming techniques in action",
                 category: "Environment",
@@ -301,8 +295,8 @@ export default function HomePage() {
                 delay: 400,
               },
               {
-                src: "/placeholder.svg?height=400&width=600",
-                alt: "Healthcare outreach",
+                src: "/5.webp",
+                alt: "Healthcare outreach and services",
                 title: "Health Services",
                 description: "Mobile clinics serving remote communities",
                 category: "Healthcare",
@@ -310,8 +304,8 @@ export default function HomePage() {
                 delay: 600,
               },
               {
-                src: "/placeholder.svg?height=400&width=600",
-                alt: "Women's empowerment",
+                src: "/6.webp",
+                alt: "Women's empowerment and rights",
                 title: "Women's Rights",
                 description: "Supporting survivors and ending harmful practices",
                 category: "Social Justice",
@@ -319,8 +313,8 @@ export default function HomePage() {
                 delay: 800,
               },
               {
-                src: "/placeholder.svg?height=400&width=600",
-                alt: "Environmental restoration",
+                src: "/po5.jpg",
+                alt: "Environmental restoration and impact",
                 title: "Environmental Impact",
                 description: "Reforestation and water conservation projects",
                 category: "Environment",
@@ -438,8 +432,12 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             <ScrollAnimation direction="left" className="sm:col-span-2">
               <div className="flex items-center space-x-3 mb-6">
-                <div className="bg-sky-400 p-3 rounded-xl">
-                  <Globe className="h-8 w-8 text-white" />
+                <div className="bg-white p-1 rounded-xl shadow-lg">
+                  <img
+                    src="/logo_black_bg.jpg"
+                    alt="Beyond Borders Logo"
+                    className="h-10 w-10 rounded-lg object-cover"
+                  />
                 </div>
                 <div>
                   <span className="text-xl sm:text-2xl font-bold">Beyond Borders</span>

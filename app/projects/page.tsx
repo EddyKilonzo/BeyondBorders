@@ -1,9 +1,12 @@
-import { ArrowLeft, Briefcase, Shield, Leaf, Heart, Globe, Users, Droplets, Stethoscope, Facebook, Twitter, Instagram, Mail, Linkedin } from "lucide-react"
+import { ArrowLeft, Briefcase, Shield, Leaf, Heart, Globe, Users, Droplets, Stethoscope, Facebook, Twitter, Instagram, Mail, Linkedin, Award } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { MobileNav } from "@/components/mobile-nav"
+import { ScrollAnimation } from "@/components/scroll-animation"
+import { Counter } from "@/components/counter"
 
 export default function ProjectsPage() {
   const projects = [
@@ -15,6 +18,7 @@ export default function ProjectsPage() {
       color: "bg-slate-900",
       bgColor: "bg-gradient-to-br from-card to-background",
       accent: "from-slate-900 to-blue-800",
+      image: "/2.webp",
     },
     {
       title: "Social Justice",
@@ -24,6 +28,7 @@ export default function ProjectsPage() {
       color: "bg-blue-600",
       bgColor: "bg-gradient-to-br from-card to-background",
       accent: "from-blue-600 to-sky-500",
+      image: "/6.webp",
     },
     {
       title: "Climate Resilience",
@@ -33,6 +38,7 @@ export default function ProjectsPage() {
       color: "bg-green-600",
       bgColor: "bg-gradient-to-br from-card to-background",
       accent: "from-green-600 to-emerald-500",
+      image: "/po2.jpg",
     },
     {
       title: "Sexual & Reproductive Health Rights",
@@ -42,6 +48,7 @@ export default function ProjectsPage() {
       color: "bg-pink-600",
       bgColor: "bg-gradient-to-br from-card to-background",
       accent: "from-pink-600 to-rose-500",
+      image: "/5.webp",
     },
   ]
 
@@ -52,7 +59,13 @@ export default function ProjectsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
-              <Globe className="h-8 w-8 text-sky-400" />
+              <div className="bg-white p-1 rounded-xl shadow-lg">
+                <img
+                  src="/logo_black_bg.jpg"
+                  alt="Beyond Borders Logo"
+                  className="h-8 w-8 rounded-lg object-cover"
+                />
+              </div>
               <span className="text-xl font-bold">Beyond Borders</span>
             </div>
             <div className="hidden md:flex space-x-8">
@@ -83,54 +96,82 @@ export default function ProjectsPage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center mb-6">
-            <Button asChild variant="ghost" className="text-white hover:text-sky-400 p-0 mr-4">
+      <section 
+        className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-cover bg-center bg-fixed bg-no-repeat"
+        style={{
+          backgroundImage: 'url("/2.webp")',
+          backgroundAttachment: 'fixed',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center 30%',
+        }}
+      >
+        <div className="absolute inset-0 bg-black/60"></div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center mb-8 animate-slide-in-left">
+            <Button
+              asChild
+              variant="ghost"
+              className="text-white/80 hover:text-sky-400 p-0 mr-4 glass-effect rounded-full px-4 py-2"
+            >
               <Link href="/">
                 <ArrowLeft className="h-5 w-5 mr-2" />
                 Back to Home
               </Link>
             </Button>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Projects</h1>
-          <p className="text-xl md:text-2xl max-w-4xl leading-relaxed">
-            Comprehensive, community-designed programs addressing the root causes of challenges faced by refugee communities. Our holistic approach combines immediate relief with long-term empowerment across four interconnected areas.
-          </p>
+
+          <ScrollAnimation direction="bottom" className="text-center">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-8 text-white leading-tight">Our Projects</h1>
+            <p className="text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed text-white/95 font-normal px-4">
+              Community-led programs that address root causes and create lasting change across four key areas.
+            </p>
+          </ScrollAnimation>
         </div>
       </section>
 
       {/* Projects Section */}
-      <section className="py-16 bg-background">
+      <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
             {projects.map((project, index) => (
-              <Card
-                key={index}
-                className="bg-card border-2 border-border hover:border-primary/50 hover:shadow-2xl transition-all duration-300 overflow-hidden group hover:scale-105 shadow-2xl hover:shadow-sky-500/25 dark:hover:shadow-sky-400/25 backdrop-blur-sm hover:-translate-y-2"
-              >
-                <CardContent className="p-8 relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/5 opacity-50 group-hover:opacity-70 transition-opacity duration-300 rounded-lg"></div>
-                  <div className="relative z-10">
-                    <div className="flex items-center mb-6">
-                      <div className={`bg-gradient-to-r ${project.accent} w-16 h-16 rounded-2xl flex items-center justify-center mr-4 shadow-xl group-hover:scale-110 transition-transform duration-300 ring-2 ring-white/20`}>
-                        <project.icon className="h-8 w-8 text-white drop-shadow-lg" />
+              <ScrollAnimation key={index} direction={index % 2 === 0 ? "left" : "right"} delay={index * 200}>
+                <Card
+                  className="bg-card border-2 border-border hover:border-primary/50 hover:shadow-2xl transition-all duration-300 overflow-hidden group hover:scale-105 shadow-2xl hover:shadow-sky-500/25 dark:hover:shadow-sky-400/25 backdrop-blur-sm hover:-translate-y-2 h-full"
+                >
+                  {/* Hero Image */}
+                  <div className="relative h-48 overflow-hidden">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                    <div className="absolute top-4 right-4">
+                      <div className={`bg-gradient-to-r ${project.accent} w-12 h-12 rounded-xl flex items-center justify-center shadow-lg`}>
+                        <project.icon className="h-6 w-6 text-white drop-shadow-lg" />
                       </div>
-                      <div>
-                        <h3 className="text-2xl font-bold text-foreground mb-2 drop-shadow-sm">
+                    </div>
+                  </div>
+
+                  <CardContent className="p-8 sm:p-10 relative h-full flex flex-col">
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/5 opacity-50 group-hover:opacity-70 transition-opacity duration-300 rounded-lg"></div>
+                    <div className="relative z-10 flex flex-col h-full">
+                      <div className="mb-6">
+                        <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4 drop-shadow-sm leading-tight">
                           {project.title}
                         </h3>
-                        <div className="text-sm font-semibold text-primary bg-primary/20 border border-primary/30 px-3 py-1 rounded-full shadow-md backdrop-blur-sm">
+                        <div className="text-sm font-semibold text-primary bg-primary/20 border border-primary/30 px-4 py-2 rounded-full shadow-md backdrop-blur-sm inline-block">
                           {project.stats}
                         </div>
                       </div>
+                      <p className="text-muted-foreground leading-loose text-base sm:text-lg flex-1 font-normal tracking-wide">
+                        {project.description}
+                      </p>
                     </div>
-                    <p className="text-muted-foreground leading-relaxed text-base">
-                      {project.description}
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
+                  </CardContent>
+                </Card>
+            </ScrollAnimation>
             ))}
           </div>
         </div>
@@ -139,63 +180,70 @@ export default function ProjectsPage() {
       {/* Impact Metrics */}
       <section className="py-16 bg-card">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Our Impact</h2>
-            <p className="text-xl text-muted-foreground">Creating measurable change in refugee communities</p>
-          </div>
+          <ScrollAnimation direction="bottom" className="text-center mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-6 leading-tight">Our Impact</h2>
+            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed font-medium">Creating measurable change in refugee communities</p>
+          </ScrollAnimation>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {[
               {
                 icon: Users,
-                number: "500+",
+                number: 500,
+                suffix: "+",
                 label: "Lives Empowered",
                 color: "bg-slate-900",
               },
               {
                 icon: Shield,
-                number: "20",
+                number: 20,
+                suffix: "",
                 label: "Communities",
                 color: "bg-blue-600",
               },
               {
                 icon: Droplets,
-                number: "1,200",
+                number: 1200,
+                suffix: "",
                 label: "Households",
                 color: "bg-green-600",
               },
               {
                 icon: Stethoscope,
-                number: "3,000+",
+                number: 3000,
+                suffix: "+",
                 label: "Health Services",
                 color: "bg-pink-600",
               },
             ].map((metric, index) => (
-              <Card
-                key={index}
-                className="text-center hover:shadow-xl border-2 border-border hover:border-primary/50 transition-all duration-300 hover:scale-105 bg-card shadow-2xl hover:shadow-sky-500/25 dark:hover:shadow-sky-400/25 backdrop-blur-sm group hover:-translate-y-2"
-              >
+              <ScrollAnimation key={index} direction="bottom" delay={index * 200}>
+                <Card
+                  className="text-center hover:shadow-xl border-2 border-border hover:border-primary/50 transition-all duration-300 hover:scale-105 bg-card shadow-2xl hover:shadow-sky-500/25 dark:hover:shadow-sky-400/25 backdrop-blur-sm group hover:-translate-y-2"
+                >
                 <CardContent className="p-6 relative">
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/5 opacity-50 group-hover:opacity-70 transition-opacity duration-300 rounded-lg"></div>
                   <div className="relative z-10">
                     <div className="bg-primary w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-xl group-hover:scale-110 transition-transform duration-300 ring-2 ring-primary/20">
                       <metric.icon className="h-7 w-7 text-primary-foreground drop-shadow-lg" />
                     </div>
-                    <div className="text-3xl font-bold text-foreground mb-2 drop-shadow-sm">{metric.number}</div>
-                    <div className="text-sm font-semibold text-muted-foreground">{metric.label}</div>
+                    <div className="text-2xl sm:text-3xl font-bold text-foreground mb-3 drop-shadow-sm leading-tight">
+                      <Counter end={metric.number} suffix={metric.suffix} duration={2000 + index * 200} />
+                    </div>
+                    <div className="text-sm sm:text-base font-semibold text-muted-foreground leading-relaxed">{metric.label}</div>
                   </div>
                 </CardContent>
               </Card>
+            </ScrollAnimation>
             ))}
           </div>
         </div>
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-slate-900 text-white">
+      <section className="py-20 bg-slate-900 text-white">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Support Our Projects</h2>
-          <p className="text-xl mb-8 opacity-90">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 leading-tight">Support Our Projects</h2>
+          <p className="text-lg sm:text-xl mb-10 opacity-95 leading-relaxed font-medium max-w-2xl mx-auto">
             Your support helps us expand these life-changing programs to reach more communities
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -220,8 +268,12 @@ export default function ProjectsPage() {
           <div className="grid md:grid-cols-4 gap-8 mb-12">
             <div className="md:col-span-2">
               <div className="flex items-center space-x-3 mb-6">
-                <div className="bg-sky-400 p-3 rounded-xl">
-                  <Globe className="h-8 w-8 text-white" />
+                <div className="bg-white p-1 rounded-xl shadow-lg">
+                  <img
+                    src="/logo_black_bg.jpg"
+                    alt="Beyond Borders Logo"
+                    className="h-10 w-10 rounded-lg object-cover"
+                  />
                 </div>
                 <div>
                   <span className="text-xl font-bold">Beyond Borders</span>
