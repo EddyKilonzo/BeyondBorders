@@ -375,11 +375,31 @@ export default function AboutPage() {
             </div>
             <div>
               <h3 className="font-bold text-lg mb-6 text-sky-400">Our Focus</h3>
-              <div className="space-y-3 text-white/80">
-                <p>Economic Justice</p>
-                <p>Social Justice</p>
-                <p>Climate Resilience</p>
-                <p>Sexual & Reproductive Health Rights</p>
+              <div className="space-y-3">
+                <Link
+                  href="/projects"
+                  className="block text-white/80 hover:text-sky-400 transition-colors hover:translate-x-1 duration-200"
+                >
+                  Economic Justice
+                </Link>
+                <Link
+                  href="/projects"
+                  className="block text-white/80 hover:text-sky-400 transition-colors hover:translate-x-1 duration-200"
+                >
+                  Social Justice
+                </Link>
+                <Link
+                  href="/projects"
+                  className="block text-white/80 hover:text-sky-400 transition-colors hover:translate-x-1 duration-200"
+                >
+                  Climate Resilience
+                </Link>
+                <Link
+                  href="/projects"
+                  className="block text-white/80 hover:text-sky-400 transition-colors hover:translate-x-1 duration-200"
+                >
+                  Sexual & Reproductive Health Rights
+                </Link>
               </div>
             </div>
           </div>
