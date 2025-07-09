@@ -78,6 +78,9 @@ export default function ProjectsPage() {
               <Link href="/projects" className="text-sky-400">
                 Projects
               </Link>
+              <Link href="/blog" className="hover:text-sky-400 transition-colors">
+                Blog
+              </Link>
               <Link href="/contact" className="hover:text-sky-400 transition-colors">
                 Join Us
               </Link>
@@ -309,6 +312,9 @@ export default function ProjectsPage() {
                 </Link>
                 <Link href="/about" className="block hover:text-sky-400 transition-colors">
                   Who We Are
+                </Link>
+                <Link href="/blog" className="block hover:text-sky-400 transition-colors">
+                  Blog
                 </Link>
                 <Link href="/contact" className="block hover:text-sky-400 transition-colors">
                   Contact

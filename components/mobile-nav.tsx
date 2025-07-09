@@ -56,6 +56,13 @@ export function MobileNav() {
             Projects
           </Link>
           <Link 
+            href="/blog" 
+            className="text-lg font-medium hover:text-primary transition-colors"
+            onClick={closeMenu}
+          >
+            Blog
+          </Link>
+          <Link 
             href="/contact" 
             className="text-lg font-medium hover:text-primary transition-colors"
             onClick={closeMenu}

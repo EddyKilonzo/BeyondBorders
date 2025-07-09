@@ -68,6 +68,9 @@ export default function ContactPage() {
               <Link href="/projects" className="hover:text-sky-400 transition-colors">
                 Projects
               </Link>
+              <Link href="/blog" className="hover:text-sky-400 transition-colors">
+                Blog
+              </Link>
               <Link href="/contact" className="text-sky-400">
                 Join Us
               </Link>

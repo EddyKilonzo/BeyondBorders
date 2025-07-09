@@ -60,6 +60,10 @@ export default function HomePage() {
                 <span>Projects</span>
                 <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-sky-400 to-transparent group-hover:w-full transition-all duration-300"></div>
               </Link>
+              <Link href="/blog" className="relative group py-2 hover:text-sky-400 transition-colors">
+                <span>Blog</span>
+                <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-sky-400 to-transparent group-hover:w-full transition-all duration-300"></div>
+              </Link>
               <Link href="/contact" className="relative group py-2 hover:text-sky-400 transition-colors">
                 <span>Join Us</span>
                 <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-sky-400 to-transparent group-hover:w-full transition-all duration-300"></div>
@@ -480,6 +484,12 @@ export default function HomePage() {
                   className="block hover:text-sky-400 transition-colors hover:translate-x-1 duration-200"
                 >
                   Projects
+                </Link>
+                <Link
+                  href="/blog"
+                  className="block hover:text-sky-400 transition-colors hover:translate-x-1 duration-200"
+                >
+                  Blog
                 </Link>
                 <Link
                   href="/contact"
