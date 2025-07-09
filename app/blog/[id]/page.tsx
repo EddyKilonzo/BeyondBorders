@@ -660,37 +660,39 @@ export default async function BlogPost({ params }: { params: Promise<{ id: strin
 
       {/* Hero Section */}
       <section 
-        className="relative min-h-[25vh] flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat"
+        className="relative min-h-[50vh] sm:min-h-[60vh] flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url("${post.image}")`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("${post.image}"), url("/placeholder.jpg")`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center 30%',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-black/40 to-black/50"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-black/30 via-transparent to-black/30"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center mb-3">
+          <div className="flex items-center mb-2 sm:mb-3">
             <Button
               asChild
               variant="ghost"
-              className="text-white/80 hover:text-sky-400 p-0 mr-4 glass-effect rounded-full px-3 py-1"
+              className="text-white/80 hover:text-sky-400 p-0 mr-4 glass-effect rounded-full px-2 py-1 sm:px-3 sm:py-1"
             >
               <Link href="/blog">
-                <ArrowLeft className="h-4 w-4 mr-1" />
-                Back to Blog
+                <ArrowLeft className="h-3 w-3 sm:h-4 sm:w-4 mr-1" />
+                <span className="text-xs sm:text-sm">Back to Blog</span>
               </Link>
             </Button>
           </div>
 
           <ScrollAnimation direction="bottom" className="text-center">
-            <Badge className="mb-2 bg-sky-400/20 text-sky-400 border-sky-400/30 backdrop-blur-sm text-xs">
+            <Badge className="mb-1 sm:mb-2 bg-sky-400/20 text-sky-400 border-sky-400/30 backdrop-blur-sm text-xs">
               {post.category}
             </Badge>
-            <h1 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold mb-2 text-white leading-tight drop-shadow-2xl">
+            <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mb-2 sm:mb-3 text-white leading-tight drop-shadow-2xl px-4 sm:px-0">
               {post.title}
             </h1>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-white/90 mb-2 text-sm">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-white/90 mb-2 sm:mb-3 text-xs sm:text-sm">
               <div className="flex items-center space-x-1">
                 <User className="h-3 w-3" />
                 <span>{post.author}</span>
@@ -704,7 +706,7 @@ export default async function BlogPost({ params }: { params: Promise<{ id: strin
                 <span>{post.readTime}</span>
               </div>
             </div>
-            <div className="flex flex-wrap justify-center gap-1">
+            <div className="flex flex-wrap justify-center gap-1 sm:gap-2">
               {post.tags.slice(0, 3).map((tag, index) => (
                 <Badge key={index} className="bg-white/20 text-white border-white/30 backdrop-blur-sm text-xs">
                   {tag}
@@ -716,22 +718,22 @@ export default async function BlogPost({ params }: { params: Promise<{ id: strin
       </section>
 
       {/* Article Content */}
-      <section className="py-16 bg-background">
+      <section className="py-12 sm:py-16 bg-background">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-4 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12">
             {/* Main Content */}
-            <div className="lg:col-span-3">
+            <div className="lg:col-span-3 order-2 lg:order-1">
               <ScrollAnimation direction="left">
-                <div className="prose prose-lg max-w-none">
+                <div className="prose prose-sm sm:prose-base lg:prose-lg max-w-none">
                   {post.content}
                 </div>
                 
                 {/* Tags */}
-                <div className="mt-8 pt-8 border-t border-border">
-                  <h3 className="text-lg font-semibold mb-4">Tags</h3>
+                <div className="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-border">
+                  <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Tags</h3>
                   <div className="flex flex-wrap gap-2">
                     {post.tags.map((tag, index) => (
-                      <Badge key={index} variant="secondary" className="bg-sky-400/10 text-sky-600 border-sky-400/20">
+                      <Badge key={index} variant="secondary" className="bg-sky-400/10 text-sky-600 border-sky-400/20 text-xs sm:text-sm">
                         {tag}
                       </Badge>
                     ))}
@@ -739,19 +741,19 @@ export default async function BlogPost({ params }: { params: Promise<{ id: strin
                 </div>
 
                 {/* Share */}
-                <div className="mt-8 pt-8 border-t border-border">
-                  <h3 className="text-lg font-semibold mb-4">Share this article</h3>
-                  <div className="flex space-x-4">
-                    <Button size="sm" variant="outline" className="hover:bg-sky-400 hover:text-white">
-                      <Facebook className="h-4 w-4 mr-2" />
+                <div className="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-border">
+                  <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Share this article</h3>
+                  <div className="flex flex-wrap gap-2 sm:gap-4">
+                    <Button size="sm" variant="outline" className="hover:bg-sky-400 hover:text-white text-xs sm:text-sm">
+                      <Facebook className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2" />
                       Facebook
                     </Button>
-                    <Button size="sm" variant="outline" className="hover:bg-sky-400 hover:text-white">
-                      <Twitter className="h-4 w-4 mr-2" />
+                    <Button size="sm" variant="outline" className="hover:bg-sky-400 hover:text-white text-xs sm:text-sm">
+                      <Twitter className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2" />
                       Twitter
                     </Button>
-                    <Button size="sm" variant="outline" className="hover:bg-sky-400 hover:text-white">
-                      <Linkedin className="h-4 w-4 mr-2" />
+                    <Button size="sm" variant="outline" className="hover:bg-sky-400 hover:text-white text-xs sm:text-sm">
+                      <Linkedin className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2" />
                       LinkedIn
                     </Button>
                   </div>
@@ -760,24 +762,24 @@ export default async function BlogPost({ params }: { params: Promise<{ id: strin
             </div>
 
             {/* Sidebar */}
-            <div className="lg:col-span-1">
-              <div className="sticky top-24 space-y-6">
+            <div className="lg:col-span-1 order-1 lg:order-2">
+              <div className="lg:sticky lg:top-24 space-y-4 sm:space-y-6 lg:space-y-8">
                 <ScrollAnimation direction="right">
                   {/* Author Info */}
                   <div>
-                    <Card className="shadow-2xl hover:shadow-sky-500/25 dark:hover:shadow-sky-400/25 hover:-translate-y-1 transition-all duration-300">
-                      <CardContent className="p-6">
-                        <h3 className="text-xl font-bold text-foreground mb-4">About the Author</h3>
-                        <div className="flex items-center space-x-4 mb-4">
-                          <div className="bg-primary w-12 h-12 rounded-full flex items-center justify-center">
-                            <User className="h-6 w-6 text-primary-foreground" />
+                    <Card className="shadow-lg sm:shadow-2xl hover:shadow-sky-500/25 dark:hover:shadow-sky-400/25 hover:-translate-y-1 transition-all duration-300 mb-4 sm:mb-6 lg:mb-8">
+                      <CardContent className="p-4 sm:p-5 lg:p-6">
+                        <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4 sm:mb-5 lg:mb-6">About the Author</h3>
+                        <div className="flex items-center space-x-3 sm:space-x-4 mb-4 sm:mb-5 lg:mb-6">
+                          <div className="bg-primary w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center">
+                            <User className="h-5 w-5 sm:h-6 sm:w-6 text-primary-foreground" />
                           </div>
                           <div>
-                            <h4 className="font-semibold text-foreground">{post.author}</h4>
-                            <p className="text-sm text-muted-foreground">Contributor</p>
+                            <h4 className="font-semibold text-foreground text-sm sm:text-base">{post.author}</h4>
+                            <p className="text-xs sm:text-sm text-muted-foreground">Contributor</p>
                           </div>
                         </div>
-                        <p className="text-muted-foreground text-sm">
+                        <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed">
                           Expert in {post.category.toLowerCase()} with years of experience working with refugee communities.
                         </p>
                       </CardContent>
@@ -787,14 +789,14 @@ export default async function BlogPost({ params }: { params: Promise<{ id: strin
                   {/* Related Posts */}
                   {relatedPosts.length > 0 && (
                     <div>
-                      <Card className="shadow-2xl hover:shadow-sky-500/25 dark:hover:shadow-sky-400/25 hover:-translate-y-1 transition-all duration-300">
-                        <CardContent className="p-6">
-                          <h3 className="text-xl font-bold text-foreground mb-4">Related Articles</h3>
-                          <div className="space-y-4">
+                      <Card className="shadow-lg sm:shadow-2xl hover:shadow-sky-500/25 dark:hover:shadow-sky-400/25 hover:-translate-y-1 transition-all duration-300 mb-4 sm:mb-6 lg:mb-8">
+                        <CardContent className="p-4 sm:p-5 lg:p-6">
+                          <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4 sm:mb-5 lg:mb-6">Related Articles</h3>
+                          <div className="space-y-3 sm:space-y-4">
                             {relatedPosts.map((relatedPost) => (
                               <Link key={relatedPost.id} href={`/blog/${relatedPost.id}`} className="block group">
-                                <div className="flex items-start space-x-3 p-3 rounded-lg hover:bg-muted/50 transition-colors">
-                                  <div className="w-16 h-16 rounded-lg overflow-hidden flex-shrink-0">
+                                <div className="flex items-start space-x-3 p-2 sm:p-3 rounded-lg hover:bg-muted/50 transition-colors">
+                                  <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-lg overflow-hidden flex-shrink-0">
                                     <img
                                       src={relatedPost.image}
                                       alt={relatedPost.title}
@@ -802,7 +804,7 @@ export default async function BlogPost({ params }: { params: Promise<{ id: strin
                                     />
                                   </div>
                                   <div className="flex-1 min-w-0">
-                                    <h4 className="font-semibold text-foreground group-hover:text-sky-400 transition-colors line-clamp-2">
+                                    <h4 className="font-semibold text-foreground group-hover:text-sky-400 transition-colors line-clamp-2 text-sm sm:text-base leading-tight">
                                       {relatedPost.title}
                                     </h4>
                                     <p className="text-xs text-muted-foreground mt-1">{relatedPost.date}</p>
@@ -818,13 +820,13 @@ export default async function BlogPost({ params }: { params: Promise<{ id: strin
 
                   {/* Newsletter Signup */}
                   <div>
-                    <Card className="bg-primary text-primary-foreground shadow-2xl hover:shadow-primary/25 hover:-translate-y-1 transition-all duration-300">
-                      <CardContent className="p-6 text-center">
-                        <h4 className="text-xl font-bold mb-3">Stay Updated</h4>
-                        <p className="mb-4 opacity-90 text-sm">
+                    <Card className="bg-primary text-primary-foreground shadow-lg sm:shadow-2xl hover:shadow-primary/25 hover:-translate-y-1 transition-all duration-300">
+                      <CardContent className="p-4 sm:p-5 lg:p-6 text-center">
+                        <h4 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">Stay Updated</h4>
+                        <p className="mb-4 sm:mb-5 lg:mb-6 opacity-90 text-xs sm:text-sm leading-relaxed">
                           Get the latest stories of impact delivered to your inbox.
                         </p>
-                        <Button size="lg" className="bg-card text-card-foreground hover:bg-card/90 w-full">
+                        <Button size="lg" className="bg-card text-card-foreground hover:bg-card/90 w-full py-2.5 sm:py-3 text-sm sm:text-base">
                           Subscribe to Newsletter
                         </Button>
                       </CardContent>
