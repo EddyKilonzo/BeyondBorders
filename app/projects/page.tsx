@@ -1,4 +1,5 @@
 import { ArrowLeft, Briefcase, Shield, Leaf, Heart, Globe, Users, Droplets, Stethoscope, Facebook, Twitter, Instagram, Mail, Linkedin, Award } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -53,17 +54,20 @@ export default function ProjectsPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background" role="main">
       {/* Navigation */}
-      <nav className="bg-slate-900 text-white sticky top-0 z-50 shadow-lg">
+      <nav className="bg-slate-900 text-white sticky top-0 z-50 shadow-lg" role="banner">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
               <div className="bg-white p-1 rounded-xl shadow-lg">
-                <img
+                <Image
                   src="/logo_black_bg.jpg"
-                  alt="Beyond Borders Logo"
+                  alt="Beyond Borders logo with black background"
+                  width={40}
+                  height={40}
                   className="h-8 w-8 rounded-lg object-cover"
+                  priority
                 />
               </div>
               <span className="text-xl font-bold">Beyond Borders</span>
@@ -144,9 +148,11 @@ export default function ProjectsPage() {
                 >
                   {/* Hero Image */}
                   <div className="relative h-48 overflow-hidden">
-                    <img
+                    <Image
                       src={project.image}
-                      alt={project.title}
+                      alt={project.title + ' project feature image'}
+                      width={600}
+                      height={400}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
@@ -215,9 +221,11 @@ export default function ProjectsPage() {
             </ScrollAnimation>
             <ScrollAnimation direction="right">
               <div className="relative group overflow-hidden rounded-3xl shadow-2xl">
-                <img
+                <Image
                   src="/ac.jpg"
-                  alt="Community members celebrating project success and sustainable development"
+                  alt="Community members celebrating project success and sustainable development, group smiling."
+                  width={600}
+                  height={400}
                   className="w-full h-96 object-cover object-center transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/30 to-transparent"></div>
@@ -325,10 +333,12 @@ export default function ProjectsPage() {
             <div className="md:col-span-2">
               <div className="flex items-center space-x-3 mb-6">
                 <div className="bg-white p-1 rounded-xl shadow-lg">
-                  <img
+                  <Image
                     src="/logo_black_bg.jpg"
-                    alt="Beyond Borders Logo"
-                    className="h-10 w-10 rounded-lg object-cover"
+                    alt="Beyond Borders logo with black background"
+                    width={40}
+                    height={40}
+                    className="h-8 w-8 rounded-lg object-cover"
                   />
                 </div>
                 <div>

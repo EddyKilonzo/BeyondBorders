@@ -1,4 +1,5 @@
 import { ArrowLeft, Users, Target, Heart, Globe, Award, Briefcase, Shield, BookOpen, Handshake, Facebook, Twitter, Instagram, Mail, Linkedin } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -9,17 +10,20 @@ import { ScrollAnimation } from "@/components/scroll-animation"
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background" role="main">
       {/* Modern Navigation */}
-      <nav className="bg-slate-900/95 backdrop-blur-md text-white sticky top-0 z-50 shadow-2xl border-b border-white/10">
+      <nav className="bg-slate-900/95 backdrop-blur-md text-white sticky top-0 z-50 shadow-2xl border-b border-white/10" role="banner">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center space-x-3">
               <div className="bg-white p-1 rounded-xl shadow-lg">
-                <img
+                <Image
                   src="/logo_black_bg.jpg"
-                  alt="Beyond Borders Logo"
+                  alt="Beyond Borders logo with black background"
+                  width={40}
+                  height={40}
                   className="h-10 w-10 rounded-lg object-cover"
+                  priority
                 />
               </div>
               <div>
@@ -134,10 +138,13 @@ export default function AboutPage() {
             </ScrollAnimation>
             <ScrollAnimation direction="right">
               <div className="relative group overflow-hidden rounded-3xl shadow-2xl flex items-center justify-center bg-slate-100 dark:bg-slate-800" style={{minHeight: '20rem'}}>
-                <img
+                <Image
                   src="/aa.jpg"
-                  alt="Community empowerment and leadership meeting"
+                  alt="Community empowerment and leadership meeting, woman in traditional attire smiling."
+                  width={600}
+                  height={400}
                   className="max-w-full max-h-full object-contain object-center transition-transform duration-500"
+                  priority
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 right-6">
@@ -309,9 +316,11 @@ export default function AboutPage() {
             </ScrollAnimation>
             <ScrollAnimation direction="right">
               <div className="relative group overflow-hidden rounded-3xl shadow-2xl flex items-center justify-center bg-slate-100 dark:bg-slate-800" style={{minHeight: '24rem'}}>
-                <img
+                <Image
                   src="/ab.jpg"
-                  alt="Community members working together on sustainable projects"
+                  alt="Community members working together on sustainable projects, woman in beaded jewelry."
+                  width={600}
+                  height={400}
                   className="max-w-full max-h-full object-contain object-center transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/30 to-transparent"></div>
@@ -371,9 +380,11 @@ export default function AboutPage() {
             <div className="md:col-span-2">
               <div className="flex items-center space-x-3 mb-6">
                 <div className="bg-white p-1 rounded-xl shadow-lg">
-                  <img
+                  <Image
                     src="/logo_black_bg.jpg"
                     alt="Beyond Borders Logo"
+                    width={40}
+                    height={40}
                     className="h-10 w-10 rounded-lg object-cover"
                   />
                 </div>
