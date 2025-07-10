@@ -180,6 +180,59 @@ export default function ProjectsPage() {
         </div>
       </section>
 
+      {/* Project Success Story */}
+      <section className="py-20 bg-gradient-to-br from-card to-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <ScrollAnimation direction="left">
+              <Badge className="mb-6 bg-primary/10 text-primary border-primary/20">
+                <Award className="w-4 h-4 mr-2" />
+                Success Story
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+                From{" "}
+                <span className="bg-gradient-to-r from-sky-400 to-blue-500 bg-clip-text text-transparent">
+                  Challenge to Change
+                </span>
+              </h2>
+              <p className="text-xl text-muted-foreground leading-relaxed mb-8">
+                Our community-led approach has transformed lives and created sustainable solutions that ripple through entire communities, proving that local knowledge combined with strategic support can overcome even the most complex challenges.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-center space-x-3">
+                  <div className="w-3 h-3 bg-sky-400 rounded-full"></div>
+                  <span className="text-lg">20 communities transformed</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
+                  <span className="text-lg">500+ entrepreneurs trained</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-3 h-3 bg-primary rounded-full"></div>
+                  <span className="text-lg">3,000+ people served yearly</span>
+                </div>
+              </div>
+            </ScrollAnimation>
+            <ScrollAnimation direction="right">
+              <div className="relative group overflow-hidden rounded-3xl shadow-2xl">
+                <img
+                  src="/ac.jpg"
+                  alt="Community members celebrating project success and sustainable development"
+                  className="w-full h-96 object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/30 to-transparent"></div>
+                <div className="absolute bottom-6 left-6 right-6">
+                  <div className="glass-effect rounded-2xl p-4 text-white backdrop-blur-sm">
+                    <p className="font-semibold">"Together we build stronger communities"</p>
+                    <p className="text-sm opacity-80">- Project Participant</p>
+                  </div>
+                </div>
+              </div>
+            </ScrollAnimation>
+          </div>
+        </div>
+      </section>
+
       {/* Impact Metrics */}
       <section className="py-16 bg-card">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -287,19 +340,19 @@ export default function ProjectsPage() {
                 A refugee-led nonprofit bridging gaps in aid and advocacy along the Kenya-Somalia border.
               </p>
               <div className="flex space-x-4">
-                <a href="#" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
+                <a href="https://facebook.com/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Facebook className="h-5 w-5 text-white group-hover:text-white" />
                 </a>
-                <a href="#" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
+                <a href="https://twitter.com/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Twitter className="h-5 w-5 text-white group-hover:text-white" />
                 </a>
-                <a href="#" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
+                <a href="https://instagram.com/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Instagram className="h-5 w-5 text-white group-hover:text-white" />
                 </a>
-                <a href="#" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
+                <a href="https://linkedin.com/company/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Linkedin className="h-5 w-5 text-white group-hover:text-white" />
                 </a>
-                <a href="#" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
+                <a href="mailto:info@beyondborders.org" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Mail className="h-5 w-5 text-white group-hover:text-white" />
                 </a>
               </div>
@@ -319,7 +372,7 @@ export default function ProjectsPage() {
                 <Link href="/contact" className="block hover:text-sky-400 transition-colors">
                   Contact
                 </Link>
-                <Link href="#" className="block hover:text-sky-400 transition-colors">
+                <Link href="/contact" className="block hover:text-sky-400 transition-colors">
                   Donate
                 </Link>
               </div>
@@ -360,13 +413,13 @@ export default function ProjectsPage() {
                 &copy; 2024 Beyond Borders. All rights reserved.
               </p>
               <div className="flex space-x-6 text-sm text-white/60">
-                <Link href="#" className="hover:text-sky-400 transition-colors">
+                <Link href="/contact" className="hover:text-sky-400 transition-colors">
                   Privacy Policy
                 </Link>
-                <Link href="#" className="hover:text-sky-400 transition-colors">
+                <Link href="/contact" className="hover:text-sky-400 transition-colors">
                   Terms of Service
                 </Link>
-                <Link href="#" className="hover:text-sky-400 transition-colors">
+                <Link href="/projects" className="hover:text-sky-400 transition-colors">
                   Impact Reports
                 </Link>
               </div>

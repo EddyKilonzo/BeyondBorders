@@ -185,10 +185,16 @@ export default function BlogPage() {
 
       {/* Hero Section */}
       <section 
-        className="relative min-h-[50vh] sm:min-h-[60vh] lg:min-h-[70vh] flex items-center justify-center overflow-hidden hero-bg"
+        className="relative min-h-[50vh] sm:min-h-[60vh] lg:min-h-[70vh] flex items-center justify-center overflow-hidden"
+        style={{
+          backgroundImage: 'url(/2.webp)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center 30%',
+          backgroundRepeat: 'no-repeat'
+        }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-black/20 via-transparent to-black/20"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+        <div className="absolute inset-0 bg-black/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
           <div className="flex items-center mb-4 sm:mb-6 lg:mb-8">
             <Button
@@ -505,19 +511,19 @@ export default function BlogPage() {
                 A refugee-led nonprofit bridging gaps in aid and advocacy along the Kenya-Somalia border.
               </p>
               <div className="flex flex-wrap gap-2 sm:gap-4">
-                <a href="#" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
+                <a href="https://facebook.com/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Facebook className="h-4 w-4 sm:h-5 sm:w-5 text-white group-hover:text-white" />
                 </a>
-                <a href="#" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
+                <a href="https://twitter.com/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Twitter className="h-4 w-4 sm:h-5 sm:w-5 text-white group-hover:text-white" />
                 </a>
-                <a href="#" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
+                <a href="https://instagram.com/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Instagram className="h-4 w-4 sm:h-5 sm:w-5 text-white group-hover:text-white" />
                 </a>
-                <a href="#" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
+                <a href="https://linkedin.com/company/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Linkedin className="h-4 w-4 sm:h-5 sm:w-5 text-white group-hover:text-white" />
                 </a>
-                <a href="#" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
+                <a href="mailto:info@beyondborders.org" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-white group-hover:text-white" />
                 </a>
               </div>
@@ -537,7 +543,7 @@ export default function BlogPage() {
                 <Link href="/contact" className="block hover:text-sky-400 transition-colors text-sm sm:text-base">
                   Contact
                 </Link>
-                <Link href="#" className="block hover:text-sky-400 transition-colors text-sm sm:text-base">
+                <Link href="/contact" className="block hover:text-sky-400 transition-colors text-sm sm:text-base">
                   Donate
                 </Link>
               </div>
@@ -578,13 +584,13 @@ export default function BlogPage() {
                 &copy; 2024 Beyond Borders. All rights reserved.
               </p>
               <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-white/60">
-                <Link href="#" className="hover:text-sky-400 transition-colors">
+                <Link href="/contact" className="hover:text-sky-400 transition-colors">
                   Privacy Policy
                 </Link>
-                <Link href="#" className="hover:text-sky-400 transition-colors">
+                <Link href="/contact" className="hover:text-sky-400 transition-colors">
                   Terms of Service
                 </Link>
-                <Link href="#" className="hover:text-sky-400 transition-colors">
+                <Link href="/projects" className="hover:text-sky-400 transition-colors">
                   Impact Reports
                 </Link>
               </div>

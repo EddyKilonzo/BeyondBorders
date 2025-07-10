@@ -861,19 +861,19 @@ export default async function BlogPost({ params }: { params: Promise<{ id: strin
                 A refugee-led nonprofit bridging gaps in aid and advocacy along the Kenya-Somalia border.
               </p>
               <div className="flex space-x-4">
-                <a href="#" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
+                <a href="https://facebook.com/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Facebook className="h-5 w-5 text-white group-hover:text-white" />
                 </a>
-                <a href="#" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
+                <a href="https://twitter.com/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Twitter className="h-5 w-5 text-white group-hover:text-white" />
                 </a>
-                <a href="#" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
+                <a href="https://instagram.com/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Instagram className="h-5 w-5 text-white group-hover:text-white" />
                 </a>
-                <a href="#" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
+                <a href="https://linkedin.com/company/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Linkedin className="h-5 w-5 text-white group-hover:text-white" />
                 </a>
-                <a href="#" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
+                <a href="mailto:info@beyondborders.org" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Mail className="h-5 w-5 text-white group-hover:text-white" />
                 </a>
               </div>
@@ -931,13 +931,13 @@ export default async function BlogPost({ params }: { params: Promise<{ id: strin
                 &copy; 2024 Beyond Borders. All rights reserved.
               </p>
               <div className="flex space-x-6 text-sm text-white/60">
-                <Link href="#" className="hover:text-sky-400 transition-colors">
+                <Link href="/contact" className="hover:text-sky-400 transition-colors">
                   Privacy Policy
                 </Link>
-                <Link href="#" className="hover:text-sky-400 transition-colors">
+                <Link href="/contact" className="hover:text-sky-400 transition-colors">
                   Terms of Service
                 </Link>
-                <Link href="#" className="hover:text-sky-400 transition-colors">
+                <Link href="/projects" className="hover:text-sky-400 transition-colors">
                   Impact Reports
                 </Link>
               </div>

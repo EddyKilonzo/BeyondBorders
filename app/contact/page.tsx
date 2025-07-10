@@ -156,26 +156,55 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Hero Image Section */}
-      <section 
-        className="py-24 bg-cover bg-center bg-fixed bg-no-repeat relative"
-        style={{
-          backgroundImage: 'url("/2.webp")',
-          backgroundAttachment: 'fixed',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center 30%',
-        }}
-      >
-        <div className="absolute inset-0 bg-black/70"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <ScrollAnimation direction="bottom">
-            <div className="text-center text-white">
-              <h3 className="text-3xl md:text-4xl font-bold mb-4">Building Communities Together</h3>
-              <p className="text-lg md:text-xl opacity-90 max-w-3xl mx-auto">
-                Join us in creating sustainable change that empowers displaced communities and builds resilient futures.
+      {/* Community Connection Section */}
+      <section className="py-20 bg-gradient-to-br from-card to-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <ScrollAnimation direction="left">
+              <Badge className="mb-6 bg-primary/10 text-primary border-primary/20">
+                <Handshake className="w-4 h-4 mr-2" />
+                Join Our Community
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+                Together We{" "}
+                <span className="bg-gradient-to-r from-sky-400 to-blue-500 bg-clip-text text-transparent">
+                  Create Change
+                </span>
+              </h2>
+              <p className="text-xl text-muted-foreground leading-relaxed mb-8">
+                Every contribution, whether through time, resources, or advocacy, helps us build stronger communities and create lasting impact for displaced families.
               </p>
-            </div>
-          </ScrollAnimation>
+              <div className="space-y-4">
+                <div className="flex items-center space-x-3">
+                  <div className="w-3 h-3 bg-sky-400 rounded-full"></div>
+                  <span className="text-lg">Volunteer opportunities</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
+                  <span className="text-lg">Partnership programs</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-3 h-3 bg-primary rounded-full"></div>
+                  <span className="text-lg">Advocacy campaigns</span>
+                </div>
+              </div>
+            </ScrollAnimation>
+            <ScrollAnimation direction="right">
+              <div className="relative group overflow-hidden rounded-3xl shadow-2xl">
+                <img
+                  src="/ad.jpg"
+                  alt="Community members working together and building connections"
+                  className="w-full h-96 object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/30 to-transparent"></div>
+                <div className="absolute top-6 left-6">
+                  <div className="glass-effect rounded-2xl p-3 text-white backdrop-blur-sm">
+                    <p className="font-semibold text-sm">Join Our Mission</p>
+                  </div>
+                </div>
+              </div>
+            </ScrollAnimation>
+          </div>
         </div>
       </section>
 
@@ -346,19 +375,19 @@ export default function ContactPage() {
                 A refugee-led nonprofit bridging gaps in aid and advocacy along the Kenya-Somalia border.
               </p>
               <div className="flex space-x-4">
-                <a href="#" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
+                <a href="https://facebook.com/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Facebook className="h-5 w-5 text-white group-hover:text-white" />
                 </a>
-                <a href="#" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
+                <a href="https://twitter.com/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Twitter className="h-5 w-5 text-white group-hover:text-white" />
                 </a>
-                <a href="#" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
+                <a href="https://instagram.com/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Instagram className="h-5 w-5 text-white group-hover:text-white" />
                 </a>
-                <a href="#" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
+                <a href="https://linkedin.com/company/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Linkedin className="h-5 w-5 text-white group-hover:text-white" />
                 </a>
-                <a href="#" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
+                <a href="mailto:info@beyondborders.org" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Mail className="h-5 w-5 text-white group-hover:text-white" />
                 </a>
               </div>
@@ -375,7 +404,7 @@ export default function ContactPage() {
                 <Link href="/projects" className="block hover:text-sky-400 transition-colors">
                   Projects
                 </Link>
-                <Link href="#" className="block hover:text-sky-400 transition-colors">
+                <Link href="/contact" className="block hover:text-sky-400 transition-colors">
                   Donate
                 </Link>
               </div>
@@ -416,13 +445,13 @@ export default function ContactPage() {
                 &copy; 2024 Beyond Borders. All rights reserved.
               </p>
               <div className="flex space-x-6 text-sm text-white/60">
-                <Link href="#" className="hover:text-sky-400 transition-colors">
+                <Link href="/contact" className="hover:text-sky-400 transition-colors">
                   Privacy Policy
                 </Link>
-                <Link href="#" className="hover:text-sky-400 transition-colors">
+                <Link href="/contact" className="hover:text-sky-400 transition-colors">
                   Terms of Service
                 </Link>
-                <Link href="#" className="hover:text-sky-400 transition-colors">
+                <Link href="/projects" className="hover:text-sky-400 transition-colors">
                   Impact Reports
                 </Link>
               </div>

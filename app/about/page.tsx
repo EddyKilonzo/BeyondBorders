@@ -133,15 +133,15 @@ export default function AboutPage() {
               </div>
             </ScrollAnimation>
             <ScrollAnimation direction="right">
-              <div className="relative">
+              <div className="relative group overflow-hidden rounded-3xl shadow-2xl flex items-center justify-center bg-slate-100 dark:bg-slate-800" style={{minHeight: '20rem'}}>
                 <img
-                  src="/3.webp"
-                  alt="Community empowerment meeting and leadership"
-                  className="rounded-3xl shadow-2xl w-full h-80 object-cover"
+                  src="/aa.jpg"
+                  alt="Community empowerment and leadership meeting"
+                  className="max-w-full max-h-full object-contain object-center transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/20 to-transparent rounded-3xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 right-6">
-                  <div className="glass-effect rounded-2xl p-4 text-white">
+                  <div className="glass-effect rounded-2xl p-4 text-white backdrop-blur-sm">
                     <p className="font-semibold">"Every voice matters in building our future"</p>
                     <p className="text-sm opacity-80">- Community Leader</p>
                   </div>
@@ -274,6 +274,58 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Impact Image Section */}
+      <section className="py-20 bg-gradient-to-br from-background to-card">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <ScrollAnimation direction="left">
+              <Badge className="mb-6 bg-primary/10 text-primary border-primary/20">
+                <Heart className="w-4 h-4 mr-2" />
+                Our Impact
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+                Transforming{" "}
+                <span className="bg-gradient-to-r from-sky-400 to-blue-500 bg-clip-text text-transparent">
+                  Lives Daily
+                </span>
+              </h2>
+              <p className="text-xl text-muted-foreground leading-relaxed mb-8">
+                Through our community-led programs, we're creating sustainable change that empowers individuals and builds resilient communities for generations to come.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-center space-x-3">
+                  <div className="w-3 h-3 bg-sky-400 rounded-full"></div>
+                  <span className="text-lg">Vocational training for economic independence</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
+                  <span className="text-lg">Healthcare access for vulnerable populations</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-3 h-3 bg-primary rounded-full"></div>
+                  <span className="text-lg">Environmental restoration and sustainability</span>
+                </div>
+              </div>
+            </ScrollAnimation>
+            <ScrollAnimation direction="right">
+              <div className="relative group overflow-hidden rounded-3xl shadow-2xl flex items-center justify-center bg-slate-100 dark:bg-slate-800" style={{minHeight: '24rem'}}>
+                <img
+                  src="/ab.jpg"
+                  alt="Community members working together on sustainable projects"
+                  className="max-w-full max-h-full object-contain object-center transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/30 to-transparent"></div>
+                <div className="absolute top-6 right-6">
+                  <div className="glass-effect rounded-2xl p-3 text-white backdrop-blur-sm">
+                    <p className="font-semibold text-sm">500+ Lives Changed</p>
+                  </div>
+                </div>
+              </div>
+            </ScrollAnimation>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 text-white relative overflow-hidden animate-gradient">
         <div className="absolute inset-0 bg-black/20"></div>
@@ -334,19 +386,19 @@ export default function AboutPage() {
                 A refugee-led nonprofit bridging gaps in aid and advocacy along the Kenya-Somalia border.
               </p>
               <div className="flex space-x-4">
-                <a href="#" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
+                <a href="https://facebook.com/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Facebook className="h-5 w-5 text-white group-hover:text-white" />
                 </a>
-                <a href="#" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
+                <a href="https://twitter.com/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Twitter className="h-5 w-5 text-white group-hover:text-white" />
                 </a>
-                <a href="#" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
+                <a href="https://instagram.com/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Instagram className="h-5 w-5 text-white group-hover:text-white" />
                 </a>
-                <a href="#" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
+                <a href="https://linkedin.com/company/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Linkedin className="h-5 w-5 text-white group-hover:text-white" />
                 </a>
-                <a href="#" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
+                <a href="mailto:info@beyondborders.org" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Mail className="h-5 w-5 text-white group-hover:text-white" />
                 </a>
               </div>
@@ -370,7 +422,7 @@ export default function AboutPage() {
                   Contact
                 </Link>
                 <Link
-                  href="#"
+                  href="/contact"
                   className="block hover:text-sky-400 transition-colors hover:translate-x-1 duration-200"
                 >
                   Donate
@@ -413,13 +465,13 @@ export default function AboutPage() {
                 &copy; 2024 Beyond Borders. All rights reserved.
               </p>
               <div className="flex space-x-6 text-sm text-white/60">
-                <Link href="#" className="hover:text-sky-400 transition-colors">
+                <Link href="/contact" className="hover:text-sky-400 transition-colors">
                   Privacy Policy
                 </Link>
-                <Link href="#" className="hover:text-sky-400 transition-colors">
+                <Link href="/contact" className="hover:text-sky-400 transition-colors">
                   Terms of Service
                 </Link>
-                <Link href="#" className="hover:text-sky-400 transition-colors">
+                <Link href="/projects" className="hover:text-sky-400 transition-colors">
                   Impact Reports
                 </Link>
               </div>
