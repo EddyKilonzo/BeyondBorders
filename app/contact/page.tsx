@@ -1,3 +1,5 @@
+"use client"
+
 import { ArrowLeft, Mail, Phone, MapPin, Users, Heart, Handshake, CreditCard, Globe, Facebook, Twitter, Instagram, Linkedin, Award } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
@@ -10,38 +12,71 @@ import { Label } from "@/components/ui/label"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { MobileNav } from "@/components/mobile-nav"
 import { ScrollAnimation } from "@/components/scroll-animation"
+import { useState } from "react"
 
 export default function ContactPage() {
-  const ways = [
-    {
-      icon: CreditCard,
-      title: "Donate",
-      description: "Support our programs with financial contributions",
-      action: "Make a Donation",
-      color: "bg-slate-900",
-    },
-    {
-      icon: Users,
-      title: "Volunteer",
-      description: "Join our team and contribute your skills",
-      action: "Volunteer With Us",
-      color: "bg-blue-600",
-    },
-    {
-      icon: Handshake,
-      title: "Partner",
-      description: "Collaborate with us on programs and initiatives",
-      action: "Become a Partner",
-      color: "bg-slate-900",
-    },
-    {
-      icon: Heart,
-      title: "Advocate",
-      description: "Help us raise awareness and advocate for change",
-      action: "Join Our Advocacy",
-      color: "bg-blue-600",
-    },
-  ]
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    interest: '',
+    message: ''
+  })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
+  const [submitMessage, setSubmitMessage] = useState('')
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+    setSubmitStatus('idle')
+    setSubmitMessage('')
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          email: formData.email,
+          interest: formData.interest,
+          message: formData.message,
+        }),
+      })
+
+      if (response.ok) {
+        setSubmitStatus('success')
+        setSubmitMessage('Thank you! Your message has been sent successfully.')
+        // Reset form
+        setFormData({
+          firstName: '',
+          lastName: '',
+          email: '',
+          interest: '',
+          message: ''
+        })
+      } else {
+        setSubmitStatus('error')
+        setSubmitMessage('Failed to send message. Please try again.')
+      }
+    } catch (error) {
+      setSubmitStatus('error')
+      setSubmitMessage('Network error. Please check your connection and try again.')
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value } = e.target
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }))
+  }
 
   return (
     <div className="min-h-screen bg-background" role="main">
@@ -125,237 +160,102 @@ export default function ContactPage() {
             </p>
           </ScrollAnimation>
         </div>
-      </section>
+      </section> {/* Hero Section */}
 
-      {/* Ways to Get Involved */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <ScrollAnimation direction="bottom" className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Ways to Get Involved</h2>
-            <p className="text-xl text-muted-foreground">Choose how you'd like to support our mission</p>
+      {/* Info Section */}
+      <section className="py-16 bg-background">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="flex flex-col items-center mb-6">
+            <div className="bg-white p-2 rounded-full shadow-lg mb-4">
+              <Image
+                src="/logo_black_bg.jpg"
+                alt="Beyond Borders logo"
+                width={80}
+                height={80}
+                className="rounded-full"
+              />
+            </div>
+            <h2 className="text-3xl font-bold">Beyond Borders</h2>
+            <p className="text-sm text-sky-400 mb-2">Refugee-Led Impact</p>
+            <p className="text-base text-foreground max-w-2xl leading-relaxed">
+              A refugee-led nonprofit bridging gaps in aid and advocacy along the Kenya-Somalia border.
+            </p>
+          </div>
+          <div className="flex justify-center space-x-6">
+            <a href="https://twitter.com/beyondborders" target="_blank" rel="noopener noreferrer" className="text-2xl text-gray-600 hover:text-sky-400 transition">
+              <Twitter />
+            </a>
+            <a href="https://instagram.com/beyondborders" target="_blank" rel="noopener noreferrer" className="text-2xl text-gray-600 hover:text-pink-500 transition">
+              <Instagram />
+            </a>
+            <a href="https://linkedin.com/company/beyondborders" target="_blank" rel="noopener noreferrer" className="text-2xl text-gray-600 hover:text-blue-700 transition">
+              <Linkedin />
+            </a>
+            <a href="https://facebook.com/beyondborders" target="_blank" rel="noopener noreferrer" className="text-2xl text-gray-600 hover:text-blue-600 transition">
+              <Facebook />
+            </a>
+          </div>
+        </div>
+      </section>
+      {/* Info Section */}
+
+      {/* Image & Description Section */}
+      <section className="py-16 bg-muted">
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center px-4 sm:px-6 lg:px-8">
+          <div className="md:w-1/2 mb-8 md:mb-0">
+            <Image
+              src="/po1.jpg"
+              alt="Our dedicated team"
+              width={600}
+              height={400}
+              className="rounded-lg shadow-lg object-cover"
+            />
+          </div>
+          <div className="md:w-1/2 md:pl-8">
+            <h3 className="text-2xl font-bold mb-4 text-foreground">Our Dedicated Team</h3>
+            <p className="text-base leading-relaxed text-foreground">
+              A passionate group of volunteers and staff committed to empowering displaced communities through advocacy, education, and direct support.
+            </p>
+          </div>
+        </div>
+      </section>
+      {/* Image & Description Section */}
+
+      {/* Contact Section */}
+      <section className="py-20 bg-background">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollAnimation direction="bottom">
+            <h2 className="text-4xl font-bold text-center mb-10">Get in Touch</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+              {/* Email Card */}
+              <div className="flex justify-center">
+                <div className="bg-card p-6 rounded-lg shadow-md flex items-center space-x-4">
+                  <Mail className="h-8 w-8 text-primary" />
+                  <div className="text-left">
+                    <p className="text-lg font-semibold text-foreground">Email Us</p>
+                    <a href="mailto:info@beyondborders.co.ke" className="text-primary hover:text-sky-400 transition-colors duration-200">
+                      info@beyondborders.co.ke
+                    </a>
+                  </div>
+                </div>
+              </div>
+              {/* Social Links */}
+              <div className="flex justify-center items-center space-x-8">
+                <Link href="https://facebook.com/yourpage" target="_blank" className="text-3xl text-gray-600 hover:text-blue-600 transition">
+                  <Facebook />
+                </Link>
+                <Link href="https://twitter.com/yourpage" target="_blank" className="text-3xl text-gray-600 hover:text-sky-400 transition">
+                  <Twitter />
+                </Link>
+                <Link href="https://instagram.com/yourpage" target="_blank" className="text-3xl text-gray-600 hover:text-pink-500 transition">
+                  <Instagram />
+                </Link>
+                <Link href="https://linkedin.com/company/yourpage" target="_blank" className="text-3xl text-gray-600 hover:text-blue-700 transition">
+                  <Linkedin />
+                </Link>
+              </div>
+            </div>
           </ScrollAnimation>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-            {ways.map((way, index) => (
-              <ScrollAnimation key={index} direction="bottom" delay={index * 200}>
-                <Card
-                  className="group hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 bg-card shadow-2xl hover:shadow-sky-500/25 dark:hover:shadow-sky-400/25"
-                >
-                <CardContent className="p-6 text-center">
-                  <div
-                    className={`${way.color} w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}
-                  >
-                    <way.icon className="h-8 w-8 text-white" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-foreground mb-3">{way.title}</h3>
-                  <p className="text-muted-foreground mb-4 text-sm">{way.description}</p>
-                  <Button size="sm" className="bg-sky-400 text-white hover:bg-sky-400/90 w-full">
-                    {way.action}
-                  </Button>
-                </CardContent>
-              </Card>
-            </ScrollAnimation>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Community Connection Section */}
-      <section className="py-20 bg-gradient-to-br from-card to-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <ScrollAnimation direction="left">
-              <Badge className="mb-6 bg-primary/10 text-primary border-primary/20">
-                <Handshake className="w-4 h-4 mr-2" />
-                Join Our Community
-              </Badge>
-              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-                Together We{" "}
-                <span className="bg-gradient-to-r from-sky-400 to-blue-500 bg-clip-text text-transparent">
-                  Create Change
-                </span>
-              </h2>
-              <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-                Every contribution, whether through time, resources, or advocacy, helps us build stronger communities and create lasting impact for displaced families.
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <div className="w-3 h-3 bg-sky-400 rounded-full"></div>
-                  <span className="text-lg">Volunteer opportunities</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
-                  <span className="text-lg">Partnership programs</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-3 h-3 bg-primary rounded-full"></div>
-                  <span className="text-lg">Advocacy campaigns</span>
-                </div>
-              </div>
-            </ScrollAnimation>
-            <ScrollAnimation direction="right">
-              <div className="relative group overflow-hidden rounded-3xl shadow-2xl">
-                <Image
-                  src="/ad.jpg"
-                  alt="Community members working together and building connections, smiling."
-                  width={600}
-                  height={400}
-                  className="w-full h-96 object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/30 to-transparent"></div>
-                <div className="absolute top-6 left-6">
-                  <div className="glass-effect rounded-2xl p-3 text-white backdrop-blur-sm">
-                    <p className="font-semibold text-sm">Join Our Mission</p>
-                  </div>
-                </div>
-              </div>
-            </ScrollAnimation>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Form & Info */}
-      <section className="py-16 bg-card">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Contact Form */}
-            <ScrollAnimation direction="left">
-              <Card className="shadow-2xl hover:shadow-sky-500/25 dark:hover:shadow-sky-400/25 hover:-translate-y-1 transition-all duration-300">
-                <CardHeader>
-                  <CardTitle className="text-2xl text-foreground">Get in Touch</CardTitle>
-                  <p className="text-muted-foreground">
-                    Ready to make a difference? Send us a message and we'll get back to you soon.
-                  </p>
-                </CardHeader>
-                <CardContent className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <Label htmlFor="firstName">First Name</Label>
-                      <Input id="firstName" placeholder="Your first name" />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="lastName">Last Name</Label>
-                      <Input id="lastName" placeholder="Your last name" />
-                    </div>
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="email">Email</Label>
-                    <Input id="email" type="email" placeholder="your.email@example.com" />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="interest">I'm interested in</Label>
-                    <select
-                      id="interest"
-                      className="w-full p-3 border border-input rounded-md focus:ring-2 focus:ring-ring focus:border-transparent bg-background text-foreground"
-                    >
-                      <option value="">Select an option</option>
-                      <option value="donate">Making a donation</option>
-                      <option value="volunteer">Volunteering</option>
-                      <option value="partner">Partnership opportunities</option>
-                      <option value="advocacy">Advocacy work</option>
-                      <option value="other">Other</option>
-                    </select>
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="message">Message</Label>
-                    <Textarea
-                      id="message"
-                      placeholder="Tell us more about how you'd like to get involved..."
-                      rows={5}
-                    />
-                  </div>
-
-                  <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-3" size="lg">
-                    Send Message
-                  </Button>
-                </CardContent>
-              </Card>
-            </ScrollAnimation>
-
-            {/* Contact Information & Stats */}
-            <ScrollAnimation direction="right">
-              <div className="space-y-8">
-                {/* Contact Information */}
-                <Card className="shadow-2xl hover:shadow-sky-500/25 dark:hover:shadow-sky-400/25 hover:-translate-y-1 transition-all duration-300">
-                  <CardHeader>
-                    <CardTitle className="text-2xl text-foreground">Contact Information</CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-6">
-                    <div className="flex items-start space-x-4">
-                      <div className="bg-primary w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
-                        <Mail className="h-6 w-6 text-primary-foreground" />
-                      </div>
-                      <div>
-                        <h4 className="font-semibold text-foreground mb-1">Email</h4>
-                        <p className="text-muted-foreground">info@beyondborders.org</p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-start space-x-4">
-                      <div className="bg-primary w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
-                        <Phone className="h-6 w-6 text-primary-foreground" />
-                      </div>
-                      <div>
-                        <h4 className="font-semibold text-foreground mb-1">Phone</h4>
-                        <p className="text-muted-foreground">+254 XXX XXX XXX</p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-start space-x-4">
-                      <div className="bg-primary w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
-                        <MapPin className="h-6 w-6 text-primary-foreground" />
-                      </div>
-                      <div>
-                        <h4 className="font-semibold text-foreground mb-1">Location</h4>
-                        <p className="text-muted-foreground">Kenya-Somalia Border Region</p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                {/* Impact Stats */}
-                <Card className="bg-gradient-to-br from-card to-background border shadow-2xl hover:shadow-sky-500/25 dark:hover:shadow-sky-400/25 hover:-translate-y-1 transition-all duration-300">
-                  <CardHeader>
-                    <CardTitle className="text-xl text-foreground">Our Impact</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="grid grid-cols-2 gap-6 text-center">
-                      <div>
-                        <div className="text-3xl font-bold text-foreground mb-1">500+</div>
-                        <div className="text-sm text-muted-foreground">Lives Changed</div>
-                      </div>
-                      <div>
-                        <div className="text-3xl font-bold text-foreground mb-1">20</div>
-                        <div className="text-sm text-muted-foreground">Communities</div>
-                      </div>
-                      <div>
-                        <div className="text-3xl font-bold text-foreground mb-1">100+</div>
-                        <div className="text-sm text-muted-foreground">Hectares Restored</div>
-                      </div>
-                      <div>
-                        <div className="text-3xl font-bold text-foreground mb-1">3,000+</div>
-                        <div className="text-sm text-muted-foreground">People Served</div>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                {/* Call to Action */}
-                <Card className="bg-primary text-primary-foreground shadow-2xl hover:shadow-primary/25 hover:-translate-y-1 transition-all duration-300">
-                  <CardContent className="p-6 text-center">
-                    <h4 className="text-xl font-bold mb-3">Ready to Make a Difference?</h4>
-                    <p className="mb-4 opacity-90">Every contribution, big or small, helps us create lasting change.</p>
-                    <Button size="lg" className="bg-card text-card-foreground hover:bg-card/90 w-full">
-                      Start Your Journey
-                    </Button>
-                  </CardContent>
-                </Card>
-              </div>
-            </ScrollAnimation>
-          </div>
         </div>
       </section>
 

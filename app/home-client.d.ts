@@ -1,4 +1,3 @@
-declare module './home-client' {
-  import * as React from 'react';
-  export const HomePageClient: React.FC;
-} 
+import * as React from 'react';
+
+export declare const HomePageClient: React.FC;
