@@ -600,6 +600,13 @@ const blogPosts = [
   },
 ]
 
+// Generate static params for all blog posts
+export async function generateStaticParams() {
+  return blogPosts.map((post) => ({
+    id: post.id.toString(),
+  }))
+}
+
 export default async function BlogPost({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
   const post = blogPosts.find(p => p.id === parseInt(id))

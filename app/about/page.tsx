@@ -261,7 +261,7 @@ export default function AboutPage() {
             ].map((value, index) => (
               <ScrollAnimation key={index} direction={index % 2 === 0 ? "left" : "right"} delay={index * 200}>
                 <Card
-                  className="modern-card-hover bg-card border-0 shadow-2xl hover:shadow-sky-500/25 dark:hover:shadow-sky-400/25 overflow-hidden group hover:-translate-y-2 transition-all duration-300"
+                  className="modern-card-hover bg-card border border-border/50 shadow-2xl hover:shadow-sky-500/25 dark:hover:shadow-sky-400/25 dark:border-sky-400/20 overflow-hidden group hover:-translate-y-2 transition-all duration-300"
                 >
                 <CardContent className="p-8 flex items-start space-x-6">
                   <div

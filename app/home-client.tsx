@@ -248,7 +248,7 @@ export function HomePageClient() {
               },
             ].map((mission, index) => (
               <ScrollAnimation key={index} direction={index % 2 === 0 ? "left" : "right"} delay={index * 200}>
-                <Card className="modern-card-hover bg-card border-0 shadow-2xl hover:shadow-sky-500/25 dark:hover:shadow-sky-400/25 overflow-hidden group hover:-translate-y-2 transition-all duration-300">
+                <Card className="modern-card-hover bg-card border border-border/50 shadow-2xl hover:shadow-sky-500/25 dark:hover:shadow-sky-400/25 dark:border-sky-400/20 overflow-hidden group hover:-translate-y-2 transition-all duration-300">
                   <CardContent className="p-6 lg:p-8 flex items-start space-x-4">
                     <div
                       className={`bg-gradient-to-br ${mission.color} w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300`}
