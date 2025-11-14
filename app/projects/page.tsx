@@ -1,4 +1,4 @@
-import { ArrowLeft, Briefcase, Shield, Leaf, Heart, Globe, Users, Droplets, Stethoscope, Facebook, Twitter, Instagram, Mail, Linkedin, Award } from "lucide-react"
+import { ArrowLeft, Briefcase, Shield, Leaf, Heart, Globe, Users, Droplets, Stethoscope, Facebook, Twitter, Instagram, Mail, Linkedin, Award, Tablet } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -11,6 +11,17 @@ import { Counter } from "@/components/counter"
 
 export default function ProjectsPage() {
   const projects = [
+    {
+      title: "AURA - Flagship Project",
+      icon: Tablet,
+      description: "AURA is our flagship project that seeks to increase access to comprehensive, confidential, and culturally appropriate SRHR information for nomadic communities through offline digital resources accessible via smartphones.",
+      stats: "Flagship Project",
+      color: "bg-sky-500",
+      bgColor: "bg-gradient-to-br from-card to-background",
+      accent: "from-sky-400 to-blue-500",
+      image: "/new posters/WhatsApp Image 2025-11-13 at 1.31.36 PM.jpeg",
+      isFlagship: true,
+    },
     {
       title: "Economic Empowerment",
       icon: Briefcase,
@@ -131,7 +142,7 @@ export default function ProjectsPage() {
           <ScrollAnimation direction="bottom" className="text-center">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-8 text-white leading-tight">Our Projects</h1>
             <p className="text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed text-white/95 font-normal px-4">
-              Community-led programs that address root causes and create lasting change across four key areas.
+              Community-led programs that address root causes and create lasting change, featuring our flagship AURA project and key initiatives across multiple areas.
             </p>
           </ScrollAnimation>
         </div>
@@ -142,45 +153,57 @@ export default function ProjectsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
             {projects.map((project, index) => (
-              <ScrollAnimation key={index} direction={index % 2 === 0 ? "left" : "right"} delay={index * 200}>
-                <Card
-                  className="bg-card border-2 border-border hover:border-primary/50 hover:shadow-2xl transition-all duration-300 overflow-hidden group hover:scale-105 shadow-2xl hover:shadow-sky-500/25 dark:hover:shadow-sky-400/25 backdrop-blur-sm hover:-translate-y-2 h-full"
+              <div key={index} className={project.isFlagship ? "md:col-span-2" : ""}>
+                <ScrollAnimation 
+                  direction={project.isFlagship ? "bottom" : (index % 2 === 0 ? "left" : "right")} 
+                  delay={project.isFlagship ? 0 : (index * 200)}
                 >
-                  {/* Hero Image */}
-                  <div className="relative h-48 overflow-hidden">
-                    <Image
-                      src={project.image}
-                      alt={project.title + ' project feature image'}
-                      width={600}
-                      height={400}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-                    <div className="absolute top-4 right-4">
-                      <div className={`bg-gradient-to-r ${project.accent} w-12 h-12 rounded-xl flex items-center justify-center shadow-lg`}>
-                        <project.icon className="h-6 w-6 text-white drop-shadow-lg" />
-                      </div>
-                    </div>
-                  </div>
-
-                  <CardContent className="p-8 sm:p-10 relative h-full flex flex-col">
-                    <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/5 opacity-50 group-hover:opacity-70 transition-opacity duration-300 rounded-lg"></div>
-                    <div className="relative z-10 flex flex-col h-full">
-                      <div className="mb-6">
-                        <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4 drop-shadow-sm leading-tight">
-                          {project.title}
-                        </h3>
-                        <div className="text-sm font-semibold text-primary bg-primary/20 border border-primary/30 px-4 py-2 rounded-full shadow-md backdrop-blur-sm inline-block">
-                          {project.stats}
+                  <Card
+                    className={`bg-card border-2 ${project.isFlagship ? 'border-sky-500/50 hover:border-sky-500' : 'border-border hover:border-primary/50'} hover:shadow-2xl transition-all duration-300 overflow-hidden group hover:scale-105 shadow-2xl ${project.isFlagship ? 'hover:shadow-sky-500/25' : 'hover:shadow-sky-500/25 dark:hover:shadow-sky-400/25'} backdrop-blur-sm hover:-translate-y-2 h-full`}
+                  >
+                    {/* Hero Image */}
+                    <div className="relative h-48 overflow-hidden bg-white">
+                      <Image
+                        src={project.image}
+                        alt={project.title + ' project feature image'}
+                        width={600}
+                        height={400}
+                        className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
+                        priority={project.isFlagship}
+                      />
+                      <div className={`absolute inset-0 bg-gradient-to-t ${project.isFlagship ? 'from-black/40 via-black/10' : 'from-black/60 via-black/20'} to-transparent`}></div>
+                      <div className="absolute top-4 right-4 flex gap-2 items-center">
+                        {project.isFlagship && (
+                          <Badge className="bg-gradient-to-r from-sky-400 to-blue-500 text-white border-0 shadow-lg px-3 py-1.5 text-xs font-bold">
+                            <Award className="w-3 h-3 mr-1.5" />
+                            Flagship
+                          </Badge>
+                        )}
+                        <div className="bg-blue-500 w-12 h-12 rounded-xl flex items-center justify-center shadow-lg">
+                          <project.icon className="h-6 w-6 text-white drop-shadow-lg" />
                         </div>
                       </div>
-                      <p className="text-muted-foreground leading-loose text-base sm:text-lg flex-1 font-normal tracking-wide">
-                        {project.description}
-                      </p>
                     </div>
-                  </CardContent>
-                </Card>
-            </ScrollAnimation>
+
+                    <CardContent className="p-8 sm:p-10 relative h-full flex flex-col">
+                      <div className={`absolute inset-0 bg-gradient-to-br ${project.isFlagship ? 'from-sky-500/10 to-blue-500/5' : 'from-primary/10 to-accent/5'} opacity-50 group-hover:opacity-70 transition-opacity duration-300 rounded-lg`}></div>
+                      <div className="relative z-10 flex flex-col h-full">
+                        <div className="mb-6">
+                          <h3 className={`${project.isFlagship ? 'text-xl sm:text-2xl' : 'text-xl sm:text-2xl'} font-bold text-foreground mb-4 drop-shadow-sm leading-tight`}>
+                            {project.title}
+                          </h3>
+                          <div className={`text-sm font-semibold ${project.isFlagship ? 'text-sky-600 bg-sky-500/20 border-sky-500/30' : 'text-primary bg-primary/20 border-primary/30'} border px-4 py-2 rounded-full shadow-md backdrop-blur-sm inline-block`}>
+                            {project.stats}
+                          </div>
+                        </div>
+                        <p className={`text-muted-foreground leading-loose ${project.isFlagship ? 'text-base sm:text-lg' : 'text-base sm:text-lg'} flex-1 font-normal tracking-wide`}>
+                          {project.description}
+                        </p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </ScrollAnimation>
+              </div>
             ))}
           </div>
         </div>
