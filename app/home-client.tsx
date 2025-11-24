@@ -1,6 +1,7 @@
 "use client"
 
-import { ArrowRight, Users, Target, Globe, Heart, Play, TrendingUp, Briefcase, Award, BookOpen, Facebook, Twitter, Instagram, Mail, Linkedin } from "lucide-react"
+import { ArrowRight, Users, Target, Globe, Heart, Play, TrendingUp, Briefcase, Award, BookOpen, Instagram, Mail } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -57,7 +58,7 @@ export function HomePageClient() {
                 <span className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-white to-sky-400 bg-clip-text text-transparent">
                   Beyond Borders
                 </span>
-                <div className="text-xs text-sky-400 font-medium">Refugee-Led Impact</div>
+                <div className="text-xs text-sky-400 font-medium">Nomadic-Led Impact</div>
               </div>
             </div>
             <div className="hidden md:flex space-x-8">
@@ -204,7 +205,7 @@ export function HomePageClient() {
               Creating <span className="text-blue-600">Lasting Change</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              We work across borders to address the root causes of displacement and build resilient communities.
+              We work with nomadic young people to equip them with necessary resources that enables them preserve their cultures as well as generate income
             </p>
           </ScrollAnimation>
 
@@ -213,7 +214,7 @@ export function HomePageClient() {
               {
                 icon: Users,
                 title: "Economic Justice",
-                description: "Empowering communities through vocational training, microfinance, and sustainable livelihoods.",
+                description: "We are empowering nomadic youth with digital skills to enable them create digital platforms that create streams of income for them",
                 color: "from-sky-400 to-blue-500",
               },
               {
@@ -243,7 +244,7 @@ export function HomePageClient() {
               {
                 icon: BookOpen,
                 title: "Community Leadership",
-                description: "Amplifying voices and supporting local leadership in refugee communities.",
+                description: "Amplifying voices and supporting local leadership in nomadic communities.",
                 color: "from-sky-400 to-blue-500",
               },
             ].map((mission, index) => (
@@ -267,12 +268,70 @@ export function HomePageClient() {
         </div>
       </section>
 
+      {/* Image Gallery Section */}
+      <section className="py-20 bg-gradient-to-br from-background to-card">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollAnimation direction="bottom" className="text-center mb-12">
+            <Badge className="mb-4 bg-primary/10 text-primary border-primary/20">Our Work</Badge>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-6">
+              Stories from the <span className="text-blue-600">Field</span>
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Capturing moments of empowerment, resilience, and transformation in nomadic communities
+            </p>
+          </ScrollAnimation>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                src: "/new posters/WhatsApp Image 2025-11-21 at 10.22.20 PM.jpeg",
+                alt: "Nomadic youth learning digital skills",
+              },
+              {
+                src: "/new posters/WhatsApp Image 2025-11-21 at 10.22.21 PM.jpeg",
+                alt: "Community members working together",
+              },
+              {
+                src: "/new posters/WhatsApp Image 2025-11-21 at 10.22.21 PM (1).jpeg",
+                alt: "Digital platform training session",
+              },
+              {
+                src: "/new posters/WhatsApp Image 2025-11-21 at 10.22.22 PM.jpeg",
+                alt: "Youth empowerment workshop",
+              },
+              {
+                src: "/new posters/WhatsApp Image 2025-11-21 at 10.22.22 PM (1).jpeg",
+                alt: "Community engagement and digital skills development",
+              },
+              {
+                src: "/new posters/WhatsApp Image 2025-11-21 at 10.22.23 PM.jpeg",
+                alt: "Nomadic youth empowerment and training",
+              },
+            ].map((image, index) => (
+              <ScrollAnimation key={index} direction="bottom" delay={index * 100}>
+                <div className="relative group overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                  <div className="aspect-[4/3] relative">
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </div>
+                </div>
+              </ScrollAnimation>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Impact Metrics */}
       <section className="py-16 bg-card">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollAnimation direction="bottom" className="text-center mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-6 leading-tight">Our Impact</h2>
-            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed font-medium">Creating measurable change in refugee communities</p>
+            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed font-medium">Creating measurable change in nomadic communities</p>
           </ScrollAnimation>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
@@ -361,25 +420,15 @@ export function HomePageClient() {
                 </div>
                 <div>
                   <span className="text-xl sm:text-2xl font-bold">Beyond Borders</span>
-                  <div className="text-sm text-sky-400">Refugee-Led Impact</div>
+                  <div className="text-sm text-sky-400">Nomadic-Led Impact</div>
                 </div>
               </div>
               <p className="text-white/80 leading-relaxed mb-6 max-w-md">
-                A refugee-led nonprofit bridging gaps in aid and advocacy along the Kenya-Somalia border, creating
-                lasting change through community-driven solutions.
+                A nomadic non profit bridging gaps in digital media, creating platforms that preserve nomadic culture and generating sources of income for young people in arid areas
               </p>
               <div className="flex space-x-4">
-                <a href="https://facebook.com/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
-                  <Facebook className="h-5 w-5 text-white group-hover:text-white" />
-                </a>
-                <a href="https://twitter.com/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
-                  <Twitter className="h-5 w-5 text-white group-hover:text-white" />
-                </a>
-                <a href="https://instagram.com/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
+                <a href="https://www.instagram.com/beyondborders_synergy/" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Instagram className="h-5 w-5 text-white group-hover:text-white" />
-                </a>
-                <a href="https://linkedin.com/company/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
-                  <Linkedin className="h-5 w-5 text-white group-hover:text-white" />
                 </a>
                 <a href="mailto:info@beyondborders.org" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Mail className="h-5 w-5 text-white group-hover:text-white" />

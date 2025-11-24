@@ -1,4 +1,4 @@
-import { ArrowLeft, ArrowRight, Calendar, Clock, Facebook, Instagram, LinkIcon, Linkedin, Mail, Twitter, User, Globe } from "lucide-react"
+import { ArrowLeft, ArrowRight, Calendar, Clock, Instagram, LinkIcon, Mail, User, Globe } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import { notFound } from "next/navigation"
@@ -15,13 +15,13 @@ const blogPosts = [
   {
     id: 1,
     title: "Building Economic Resilience: Success Stories from Our Entrepreneurship Program",
-    excerpt: "Discover how our vocational training and microfinance programs are transforming lives and creating sustainable livelihoods in refugee communities.",
+    excerpt: "Discover how our vocational training and microfinance programs are transforming lives and creating sustainable livelihoods in nomadic communities.",
     content: (
       <div className="space-y-6">
-        <p>In the heart of the Kenya-Somalia border, where opportunities are scarce and challenges abundant, our Economic Empowerment program has become a beacon of hope for hundreds of refugee families. Through a comprehensive approach combining vocational training, microfinance, and ongoing mentorship, we're breaking the cycle of poverty one entrepreneur at a time.</p>
+        <p>In the heart of the Kenya-Somalia border, where opportunities are scarce and challenges abundant, our Economic Empowerment program has become a beacon of hope for hundreds of nomadic families. Through a comprehensive approach combining vocational training, microfinance, and ongoing mentorship, we're breaking the cycle of poverty one entrepreneur at a time.</p>
 
         <h2>The Challenge</h2>
-        <p>Refugee communities face unique obstacles when it comes to economic participation. Limited access to traditional financial services, lack of formal documentation, and restricted mobility create barriers that seem insurmountable. Our research revealed that 78% of refugees in our target areas had entrepreneurial aspirations but lacked the resources and knowledge to pursue them.</p>
+        <p>Nomadic communities face unique obstacles when it comes to economic participation. Limited access to traditional financial services, lack of formal documentation, and restricted mobility create barriers that seem insurmountable. Our research revealed that 78% of nomadic people in our target areas had entrepreneurial aspirations but lacked the resources and knowledge to pursue them.</p>
 
         <h2>Our Approach</h2>
         <p>Our Economic Empowerment program takes a holistic approach:</p>
@@ -50,7 +50,7 @@ const blogPosts = [
         <h2>Looking Forward</h2>
         <p>As we expand our program, we're focusing on technology integration and digital literacy to help our entrepreneurs access broader markets. We're also developing partnerships with mobile money providers to increase financial inclusion.</p>
 
-        <p>The success of our Economic Empowerment program demonstrates that with the right support, refugee communities can become engines of economic growth and innovation. We're not just providing aid – we're building sustainable futures.</p>
+        <p>The success of our Economic Empowerment program demonstrates that with the right support, nomadic communities can become engines of economic growth and innovation. We're not just providing aid – we're building sustainable futures.</p>
       </div>
     ),
     author: "Amina Hassan",
@@ -58,7 +58,7 @@ const blogPosts = [
     readTime: "5 min read",
     category: "Economic Justice",
     image: "/2.webp",
-    tags: ["Entrepreneurship", "Skills Training", "Microfinance", "Economic Empowerment", "Refugee Communities"],
+    tags: ["Entrepreneurship", "Skills Training", "Microfinance", "Economic Empowerment", "Nomadic Communities"],
     featured: true,
   },
   {
@@ -67,10 +67,10 @@ const blogPosts = [
     excerpt: "A deep dive into our comprehensive approach to ending harmful practices and supporting survivors through community-led initiatives.",
     content: (
       <div className="space-y-6">
-        <p>Gender-based violence (GBV) remains one of the most pervasive human rights violations in refugee communities. Our Social Justice program addresses this crisis through a multi-faceted approach that combines immediate support for survivors with long-term community transformation initiatives.</p>
+        <p>Gender-based violence (GBV) remains one of the most pervasive human rights violations in nomadic communities. Our Social Justice program addresses this crisis through a multi-faceted approach that combines immediate support for survivors with long-term community transformation initiatives.</p>
 
         <h2>Understanding the Scope</h2>
-        <p>In refugee settings, GBV rates are significantly higher than in stable communities. Our research indicates that 1 in 3 women in our target areas have experienced some form of gender-based violence. The isolation, lack of legal protections, and social disruption that characterize refugee situations create conditions where GBV can flourish unchecked.</p>
+        <p>In nomadic settings, GBV rates are significantly higher than in stable communities. Our research indicates that 1 in 3 women in our target areas have experienced some form of gender-based violence. The isolation, lack of legal protections, and social disruption that characterize nomadic situations create conditions where GBV can flourish unchecked.</p>
 
         <h2>Our Comprehensive Response</h2>
         <p>Our approach to combating GBV is built on four pillars:</p>
@@ -130,7 +130,7 @@ const blogPosts = [
     excerpt: "How our climate resilience projects are helping communities adapt to changing weather patterns and secure water access.",
     content: (
       <div className="space-y-6">
-        <p>Climate change is not a distant threat for refugee communities along the Kenya-Somalia border – it's a daily reality that affects every aspect of life. Our Climate Resilience program addresses this challenge through innovative, community-driven solutions that build long-term adaptive capacity.</p>
+        <p>Climate change is not a distant threat for nomadic communities along the Kenya-Somalia border – it's a daily reality that affects every aspect of life. Our Climate Resilience program addresses this challenge through innovative, community-driven solutions that build long-term adaptive capacity.</p>
 
         <h2>The Climate Challenge</h2>
         <p>The region faces increasingly unpredictable rainfall patterns, prolonged droughts, and extreme weather events. Traditional water sources are disappearing, and agricultural practices that sustained communities for generations are no longer viable. Our climate data shows that rainfall has decreased by 35% over the past decade, while temperatures have risen by 2.3°C.</p>
@@ -214,10 +214,10 @@ const blogPosts = [
     excerpt: "The impact of our mobile health clinics in providing essential reproductive health services to remote communities.",
     content: (
       <div className="space-y-6">
-        <p>Healthcare access is a fundamental human right, yet for many refugee women and girls along the Kenya-Somalia border, quality maternal and reproductive health services remain out of reach. Our Mobile Health Clinics are revolutionizing healthcare delivery by bringing essential services directly to communities that need them most.</p>
+        <p>Healthcare access is a fundamental human right, yet for many nomadic women and girls along the Kenya-Somalia border, quality maternal and reproductive health services remain out of reach. Our Mobile Health Clinics are revolutionizing healthcare delivery by bringing essential services directly to communities that need them most.</p>
 
         <h2>The Healthcare Access Challenge</h2>
-        <p>In remote refugee settlements, the nearest health facility can be dozens of kilometers away. For pregnant women and new mothers, this distance can be life-threatening. Our baseline assessment revealed that only 35% of women in our target areas had access to skilled birth attendance, and maternal mortality rates were 3.5 times higher than the national average.</p>
+        <p>In remote nomadic settlements, the nearest health facility can be dozens of kilometers away. For pregnant women and new mothers, this distance can be life-threatening. Our baseline assessment revealed that only 35% of women in our target areas had access to skilled birth attendance, and maternal mortality rates were 3.5 times higher than the national average.</p>
 
         <h2>Mobile Clinics: Healthcare on Wheels</h2>
         <p>Our fleet of mobile clinics operates on a regular schedule, visiting remote communities weekly or bi-weekly depending on need. Each clinic is equipped with:</p>
@@ -318,10 +318,10 @@ const blogPosts = [
     excerpt: "Meet the young leaders who are driving transformation in their communities through education and advocacy.",
     content: (
       <div className="space-y-6">
-        <p>Young people are not just the leaders of tomorrow – they are the change-makers of today. In refugee communities, youth represent both the greatest challenges and the most promising opportunities for transformation. Our Youth Leadership program harnesses the energy, creativity, and resilience of young people to drive positive change in their communities.</p>
+        <p>Young people are not just the leaders of tomorrow – they are the change-makers of today. In nomadic communities, youth represent both the greatest challenges and the most promising opportunities for transformation. Our Youth Leadership program harnesses the energy, creativity, and resilience of young people to drive positive change in their communities.</p>
 
         <h2>The Youth Opportunity</h2>
-        <p>In refugee settlements, young people under 25 make up 65% of the population. Despite facing numerous challenges including limited educational opportunities and restricted mobility, these youth possess incredible potential for innovation and leadership. Our program recognizes that investing in youth leadership is essential for sustainable community development.</p>
+        <p>In nomadic settlements, young people under 25 make up 65% of the population. Despite facing numerous challenges including limited educational opportunities and restricted mobility, these youth possess incredible potential for innovation and leadership. Our program recognizes that investing in youth leadership is essential for sustainable community development.</p>
 
         <h2>Leadership Development Framework</h2>
         <p>Our Youth Leadership program is built on a comprehensive framework that develops skills across multiple domains:</p>
@@ -374,7 +374,7 @@ const blogPosts = [
         <p>We've established Youth Councils in each community that serve as platforms for youth participation in local decision-making. These councils work closely with traditional leaders and local authorities to ensure that youth voices are heard in community governance.</p>
 
         <h2>Success Stories</h2>
-        <p>Ahmed, a 22-year-old refugee from Somalia, joined our program three years ago. Despite having limited formal education, he demonstrated exceptional leadership potential. Through our program, he received training in project management and community mobilization.</p>
+        <p>Ahmed, a 22-year-old nomadic person from Somalia, joined our program three years ago. Despite having limited formal education, he demonstrated exceptional leadership potential. Through our program, he received training in project management and community mobilization.</p>
 
         <p>Ahmed identified the lack of recreational facilities for young people as a major issue in his community. He mobilized other youth to build a sports field using local materials and volunteer labor. The project not only provided a space for recreation but also brought together young people from different backgrounds.</p>
 
@@ -394,7 +394,7 @@ const blogPosts = [
         </ul>
 
         <h2>Gender Equality</h2>
-        <p>Our program places special emphasis on developing young women leaders. We provide targeted support to address the unique challenges faced by young women in refugee communities, including:</p>
+        <p>Our program places special emphasis on developing young women leaders. We provide targeted support to address the unique challenges faced by young women in nomadic communities, including:</p>
 
         <ul>
           <li>Girls' leadership circles and mentorship</li>
@@ -418,7 +418,7 @@ const blogPosts = [
         <p>Our youth leaders are not just local change-makers – they are also regional and global advocates. We provide opportunities for young people to participate in regional youth forums, international conferences, and global advocacy campaigns.</p>
 
         <h2>Future Vision</h2>
-        <p>We envision a future where young refugees are not seen as problems to be solved but as solutions to be supported. Our program is building a generation of leaders who will transform not just their own communities but the world.</p>
+        <p>We envision a future where young nomadic people are not seen as problems to be solved but as solutions to be supported. Our program is building a generation of leaders who will transform not just their own communities but the world.</p>
 
         <p>The next generation of change-makers is already here. They are creative, resilient, and determined to build a better future. Our role is to provide them with the tools, opportunities, and support they need to succeed.</p>
 
@@ -751,17 +751,17 @@ export default async function BlogPost({ params }: { params: Promise<{ id: strin
                 <div className="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-border">
                   <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Share this article</h3>
                   <div className="flex flex-wrap gap-2 sm:gap-4">
-                    <Button size="sm" variant="outline" className="hover:bg-sky-400 hover:text-white text-xs sm:text-sm">
-                      <Facebook className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2" />
-                      Facebook
+                    <Button size="sm" variant="outline" className="hover:bg-sky-400 hover:text-white text-xs sm:text-sm" asChild>
+                      <a href="https://www.instagram.com/beyondborders_synergy/" target="_blank" rel="noopener noreferrer">
+                        <Instagram className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2" />
+                        Instagram
+                      </a>
                     </Button>
-                    <Button size="sm" variant="outline" className="hover:bg-sky-400 hover:text-white text-xs sm:text-sm">
-                      <Twitter className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2" />
-                      Twitter
-                    </Button>
-                    <Button size="sm" variant="outline" className="hover:bg-sky-400 hover:text-white text-xs sm:text-sm">
-                      <Linkedin className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2" />
-                      LinkedIn
+                    <Button size="sm" variant="outline" className="hover:bg-sky-400 hover:text-white text-xs sm:text-sm" asChild>
+                      <a href="mailto:info@beyondborders.org">
+                        <Mail className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2" />
+                        Email
+                      </a>
                     </Button>
                   </div>
                 </div>
@@ -787,7 +787,7 @@ export default async function BlogPost({ params }: { params: Promise<{ id: strin
                           </div>
                         </div>
                         <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed">
-                          Expert in {post.category.toLowerCase()} with years of experience working with refugee communities.
+                          Expert in {post.category.toLowerCase()} with years of experience working with nomadic communities.
                         </p>
                       </CardContent>
                     </Card>
@@ -861,24 +861,15 @@ export default async function BlogPost({ params }: { params: Promise<{ id: strin
                 </div>
                 <div>
                   <span className="text-xl font-bold">Beyond Borders</span>
-                  <div className="text-sm text-sky-400">Refugee-Led Impact</div>
+                  <div className="text-sm text-sky-400">Nomadic-Led Impact</div>
                 </div>
               </div>
               <p className="text-white/80 leading-relaxed mb-6 max-w-md">
-                A refugee-led nonprofit bridging gaps in aid and advocacy along the Kenya-Somalia border.
+                A nomadic-led nonprofit bridging gaps in aid and advocacy along the Kenya-Somalia border.
               </p>
               <div className="flex space-x-4">
-                <a href="https://facebook.com/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
-                  <Facebook className="h-5 w-5 text-white group-hover:text-white" />
-                </a>
-                <a href="https://twitter.com/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
-                  <Twitter className="h-5 w-5 text-white group-hover:text-white" />
-                </a>
-                <a href="https://instagram.com/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
+                <a href="https://www.instagram.com/beyondborders_synergy/" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Instagram className="h-5 w-5 text-white group-hover:text-white" />
-                </a>
-                <a href="https://linkedin.com/company/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
-                  <Linkedin className="h-5 w-5 text-white group-hover:text-white" />
                 </a>
                 <a href="mailto:info@beyondborders.org" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Mail className="h-5 w-5 text-white group-hover:text-white" />

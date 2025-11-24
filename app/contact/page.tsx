@@ -1,6 +1,6 @@
 "use client"
 
-import { ArrowLeft, Mail, Phone, MapPin, Users, Heart, Handshake, CreditCard, Globe, Facebook, Twitter, Instagram, Linkedin, Award } from "lucide-react"
+import { ArrowLeft, Mail, Phone, MapPin, Users, Heart, Handshake, CreditCard, Globe, Instagram, Award } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -176,23 +176,17 @@ export default function ContactPage() {
               />
             </div>
             <h2 className="text-3xl font-bold">Beyond Borders</h2>
-            <p className="text-sm text-sky-400 mb-2">Refugee-Led Impact</p>
+            <p className="text-sm text-sky-400 mb-2">Nomadic-Led Impact</p>
             <p className="text-base text-foreground max-w-2xl leading-relaxed">
               A refugee-led nonprofit bridging gaps in aid and advocacy along the Kenya-Somalia border.
             </p>
           </div>
           <div className="flex justify-center space-x-6">
-            <a href="https://twitter.com/beyondborders" target="_blank" rel="noopener noreferrer" className="text-2xl text-gray-600 hover:text-sky-400 transition">
-              <Twitter />
-            </a>
-            <a href="https://instagram.com/beyondborders" target="_blank" rel="noopener noreferrer" className="text-2xl text-gray-600 hover:text-pink-500 transition">
+            <a href="https://www.instagram.com/beyondborders_synergy/" target="_blank" rel="noopener noreferrer" className="text-2xl text-gray-600 hover:text-pink-500 transition">
               <Instagram />
             </a>
-            <a href="https://linkedin.com/company/beyondborders" target="_blank" rel="noopener noreferrer" className="text-2xl text-gray-600 hover:text-blue-700 transition">
-              <Linkedin />
-            </a>
-            <a href="https://facebook.com/beyondborders" target="_blank" rel="noopener noreferrer" className="text-2xl text-gray-600 hover:text-blue-600 transition">
-              <Facebook />
+            <a href="mailto:info@beyondborders.co.ke" className="text-2xl text-gray-600 hover:text-sky-400 transition">
+              <Mail />
             </a>
           </div>
         </div>
@@ -204,8 +198,8 @@ export default function ContactPage() {
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center px-4 sm:px-6 lg:px-8">
           <div className="md:w-1/2 mb-8 md:mb-0">
             <Image
-              src="/po1.jpg"
-              alt="Our dedicated team"
+              src="/new posters/WhatsApp Image 2025-11-21 at 10.22.20 PM.jpeg"
+              alt="Our dedicated team working with nomadic communities"
               width={600}
               height={400}
               className="rounded-lg shadow-lg object-cover"
@@ -241,17 +235,11 @@ export default function ContactPage() {
               </div>
               {/* Social Links */}
               <div className="flex justify-center items-center space-x-8">
-                <Link href="https://facebook.com/yourpage" target="_blank" className="text-3xl text-gray-600 hover:text-blue-600 transition">
-                  <Facebook />
-                </Link>
-                <Link href="https://twitter.com/yourpage" target="_blank" className="text-3xl text-gray-600 hover:text-sky-400 transition">
-                  <Twitter />
-                </Link>
-                <Link href="https://instagram.com/yourpage" target="_blank" className="text-3xl text-gray-600 hover:text-pink-500 transition">
+                <Link href="https://www.instagram.com/beyondborders_synergy/" target="_blank" className="text-3xl text-gray-600 hover:text-pink-500 transition">
                   <Instagram />
                 </Link>
-                <Link href="https://linkedin.com/company/yourpage" target="_blank" className="text-3xl text-gray-600 hover:text-blue-700 transition">
-                  <Linkedin />
+                <Link href="mailto:info@beyondborders.co.ke" className="text-3xl text-gray-600 hover:text-sky-400 transition">
+                  <Mail />
                 </Link>
               </div>
             </div>
@@ -276,24 +264,15 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <span className="text-xl font-bold">Beyond Borders</span>
-                  <div className="text-sm text-sky-400">Refugee-Led Impact</div>
+                  <div className="text-sm text-sky-400">Nomadic-Led Impact</div>
                 </div>
               </div>
               <p className="text-white/80 leading-relaxed mb-6 max-w-md">
-                A refugee-led nonprofit bridging gaps in aid and advocacy along the Kenya-Somalia border.
+                A nomadic non profit bridging gaps in digital media, creating platforms that preserve nomadic culture and generating sources of income for young people in arid areas
               </p>
               <div className="flex space-x-4">
-                <a href="https://facebook.com/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
-                  <Facebook className="h-5 w-5 text-white group-hover:text-white" />
-                </a>
-                <a href="https://twitter.com/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
-                  <Twitter className="h-5 w-5 text-white group-hover:text-white" />
-                </a>
-                <a href="https://instagram.com/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
+                <a href="https://www.instagram.com/beyondborders_synergy/" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Instagram className="h-5 w-5 text-white group-hover:text-white" />
-                </a>
-                <a href="https://linkedin.com/company/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
-                  <Linkedin className="h-5 w-5 text-white group-hover:text-white" />
                 </a>
                 <a href="mailto:info@beyondborders.org" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Mail className="h-5 w-5 text-white group-hover:text-white" />

@@ -1,4 +1,4 @@
-import { ArrowLeft, Users, Target, Heart, Globe, Award, Briefcase, Shield, BookOpen, Handshake, Facebook, Twitter, Instagram, Mail, Linkedin } from "lucide-react"
+import { ArrowLeft, Users, Target, Heart, Globe, Award, Briefcase, Shield, BookOpen, Handshake, Instagram, Mail } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -30,7 +30,7 @@ export default function AboutPage() {
                 <span className="text-2xl font-bold bg-gradient-to-r from-white to-sky-400 bg-clip-text text-transparent">
                   Beyond Borders
                 </span>
-                <div className="text-xs text-sky-400 font-medium">Refugee-Led Impact</div>
+                <div className="text-xs text-sky-400 font-medium">Nomadic-Led Impact</div>
               </div>
             </div>
             <div className="hidden md:flex space-x-8">
@@ -104,7 +104,7 @@ export default function AboutPage() {
               <span className="bg-gradient-to-r from-sky-400 to-blue-500 bg-clip-text text-transparent">Are</span>
             </h1>
             <p className="text-xl md:text-2xl max-w-4xl mx-auto leading-relaxed text-white/90 font-light">
-              A <span className="text-sky-400 font-semibold">refugee-led nonprofit</span> bridging gaps in aid and
+              A <span className="text-sky-400 font-semibold">nomadic-led nonprofit</span> bridging gaps in aid and
               advocacy, transforming lives through community-driven solutions.
             </p>
           </ScrollAnimation>
@@ -139,8 +139,8 @@ export default function AboutPage() {
             <ScrollAnimation direction="right">
               <div className="relative group overflow-hidden rounded-3xl shadow-2xl flex items-center justify-center bg-slate-100 dark:bg-slate-800" style={{minHeight: '20rem'}}>
                 <Image
-                  src="/aa.jpg"
-                  alt="Community empowerment and leadership meeting, woman in traditional attire smiling."
+                  src="/new posters/WhatsApp Image 2025-11-21 at 10.22.22 PM.jpeg"
+                  alt="Community empowerment and leadership meeting with nomadic youth"
                   width={600}
                   height={400}
                   className="max-w-full max-h-full object-contain object-center transition-transform duration-500"
@@ -317,8 +317,8 @@ export default function AboutPage() {
             <ScrollAnimation direction="right">
               <div className="relative group overflow-hidden rounded-3xl shadow-2xl flex items-center justify-center bg-slate-100 dark:bg-slate-800" style={{minHeight: '24rem'}}>
                 <Image
-                  src="/ab.jpg"
-                  alt="Community members working together on sustainable projects, woman in beaded jewelry."
+                  src="/new posters/WhatsApp Image 2025-11-21 at 10.22.21 PM.jpeg"
+                  alt="Community members working together on sustainable projects and digital skills training"
                   width={600}
                   height={400}
                   className="max-w-full max-h-full object-contain object-center transition-transform duration-500"
@@ -390,24 +390,15 @@ export default function AboutPage() {
                 </div>
                 <div>
                   <span className="text-2xl font-bold">Beyond Borders</span>
-                  <div className="text-sm text-sky-400">Refugee-Led Impact</div>
+                  <div className="text-sm text-sky-400">Nomadic-Led Impact</div>
                 </div>
               </div>
               <p className="text-white/80 leading-relaxed mb-6 max-w-md">
-                A refugee-led nonprofit bridging gaps in aid and advocacy along the Kenya-Somalia border.
+                A nomadic non profit bridging gaps in digital media, creating platforms that preserve nomadic culture and generating sources of income for young people in arid areas
               </p>
               <div className="flex space-x-4">
-                <a href="https://facebook.com/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
-                  <Facebook className="h-5 w-5 text-white group-hover:text-white" />
-                </a>
-                <a href="https://twitter.com/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
-                  <Twitter className="h-5 w-5 text-white group-hover:text-white" />
-                </a>
-                <a href="https://instagram.com/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
+                <a href="https://www.instagram.com/beyondborders_synergy/" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Instagram className="h-5 w-5 text-white group-hover:text-white" />
-                </a>
-                <a href="https://linkedin.com/company/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
-                  <Linkedin className="h-5 w-5 text-white group-hover:text-white" />
                 </a>
                 <a href="mailto:info@beyondborders.org" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Mail className="h-5 w-5 text-white group-hover:text-white" />

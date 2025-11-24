@@ -1,6 +1,6 @@
 "use client"
 
-import { ArrowLeft, Calendar, User, Clock, Tag, Search, ArrowRight, Facebook, Twitter, Instagram, Mail, Linkedin } from "lucide-react"
+import { ArrowLeft, Calendar, User, Clock, Tag, Search, ArrowRight, Instagram, Mail } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -25,7 +25,7 @@ export default function BlogPage() {
     {
       id: 1,
       title: "Building Economic Resilience: Success Stories from Our Entrepreneurship Program",
-      excerpt: "Discover how our vocational training and microfinance programs are transforming lives and creating sustainable livelihoods in refugee communities.",
+      excerpt: "Discover how our vocational training and microfinance programs are transforming lives and creating sustainable livelihoods in nomadic communities.",
       author: "Amina Hassan",
       date: "July 5, 2025",
       readTime: "5 min read",
@@ -214,7 +214,7 @@ export default function BlogPage() {
               Stories of <span className="text-sky-400">Impact</span>
             </h1>
             <p className="text-base sm:text-lg lg:text-xl max-w-2xl lg:max-w-3xl mx-auto leading-relaxed text-white/90 font-light px-4 sm:px-6 lg:px-0">
-              Insights, updates, and stories from the frontlines of refugee-led change
+              Insights, updates, and stories from the frontlines of nomadic-led change
             </p>
           </ScrollAnimation>
         </div>
@@ -504,24 +504,15 @@ export default function BlogPage() {
                 </div>
                 <div>
                   <span className="text-lg sm:text-xl font-bold">Beyond Borders</span>
-                  <div className="text-xs sm:text-sm text-sky-400">Refugee-Led Impact</div>
+                  <div className="text-xs sm:text-sm text-sky-400">Nomadic-Led Impact</div>
                 </div>
               </div>
               <p className="text-white/80 leading-relaxed mb-4 sm:mb-6 max-w-md text-sm sm:text-base">
                 A refugee-led nonprofit bridging gaps in aid and advocacy along the Kenya-Somalia border.
               </p>
               <div className="flex flex-wrap gap-2 sm:gap-4">
-                <a href="https://facebook.com/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
-                  <Facebook className="h-4 w-4 sm:h-5 sm:w-5 text-white group-hover:text-white" />
-                </a>
-                <a href="https://twitter.com/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
-                  <Twitter className="h-4 w-4 sm:h-5 sm:w-5 text-white group-hover:text-white" />
-                </a>
-                <a href="https://instagram.com/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
+                <a href="https://www.instagram.com/beyondborders_synergy/" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Instagram className="h-4 w-4 sm:h-5 sm:w-5 text-white group-hover:text-white" />
-                </a>
-                <a href="https://linkedin.com/company/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
-                  <Linkedin className="h-4 w-4 sm:h-5 sm:w-5 text-white group-hover:text-white" />
                 </a>
                 <a href="mailto:info@beyondborders.org" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-white group-hover:text-white" />

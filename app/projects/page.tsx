@@ -1,4 +1,4 @@
-import { ArrowLeft, Briefcase, Shield, Leaf, Heart, Globe, Users, Droplets, Stethoscope, Facebook, Twitter, Instagram, Mail, Linkedin, Award, Tablet } from "lucide-react"
+import { ArrowLeft, Briefcase, Shield, Leaf, Heart, Globe, Users, Droplets, Stethoscope, Instagram, Mail, Award, Tablet } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -245,8 +245,8 @@ export default function ProjectsPage() {
             <ScrollAnimation direction="right">
               <div className="relative group overflow-hidden rounded-3xl shadow-2xl">
                 <Image
-                  src="/ac.jpg"
-                  alt="Community members celebrating project success and sustainable development, group smiling."
+                  src="/new posters/WhatsApp Image 2025-11-21 at 10.22.21 PM (1).jpeg"
+                  alt="Community members celebrating project success and digital skills training, group working together."
                   width={600}
                   height={400}
                   className="w-full h-96 object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -269,7 +269,7 @@ export default function ProjectsPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollAnimation direction="bottom" className="text-center mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-6 leading-tight">Our Impact</h2>
-            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed font-medium">Creating measurable change in refugee communities</p>
+            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed font-medium">Creating measurable change in nomadic communities</p>
           </ScrollAnimation>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
@@ -366,24 +366,15 @@ export default function ProjectsPage() {
                 </div>
                 <div>
                   <span className="text-xl font-bold">Beyond Borders</span>
-                  <div className="text-sm text-sky-400">Refugee-Led Impact</div>
+                  <div className="text-sm text-sky-400">Nomadic-Led Impact</div>
                 </div>
               </div>
               <p className="text-white/80 leading-relaxed mb-6 max-w-md">
                 A refugee-led nonprofit bridging gaps in aid and advocacy along the Kenya-Somalia border.
               </p>
               <div className="flex space-x-4">
-                <a href="https://facebook.com/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
-                  <Facebook className="h-5 w-5 text-white group-hover:text-white" />
-                </a>
-                <a href="https://twitter.com/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
-                  <Twitter className="h-5 w-5 text-white group-hover:text-white" />
-                </a>
-                <a href="https://instagram.com/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
+                <a href="https://www.instagram.com/beyondborders_synergy/" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Instagram className="h-5 w-5 text-white group-hover:text-white" />
-                </a>
-                <a href="https://linkedin.com/company/beyondborders" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
-                  <Linkedin className="h-5 w-5 text-white group-hover:text-white" />
                 </a>
                 <a href="mailto:info@beyondborders.org" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Mail className="h-5 w-5 text-white group-hover:text-white" />

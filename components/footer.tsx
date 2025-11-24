@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Facebook, Twitter, Linkedin, Instagram, Mail } from "lucide-react"
+import { Instagram, Mail } from "lucide-react"
 
 export function Footer() {
   return (
@@ -15,25 +15,17 @@ export function Footer() {
                 Empowering refugee communities through sustainable development, education, and humanitarian support since 2020.
               </p>
               <div className="flex space-x-3">
-                <Button variant="ghost" size="icon" className="hover:text-blue-500">
-                  <Facebook className="h-4 w-4" />
-                  <span className="sr-only">Facebook</span>
+                <Button variant="ghost" size="icon" className="hover:text-pink-500" asChild>
+                  <a href="https://www.instagram.com/beyondborders_synergy/" target="_blank" rel="noopener noreferrer">
+                    <Instagram className="h-4 w-4" />
+                    <span className="sr-only">Instagram</span>
+                  </a>
                 </Button>
-                <Button variant="ghost" size="icon" className="hover:text-sky-500">
-                  <Twitter className="h-4 w-4" />
-                  <span className="sr-only">Twitter</span>
-                </Button>
-                <Button variant="ghost" size="icon" className="hover:text-blue-600">
-                  <Linkedin className="h-4 w-4" />
-                  <span className="sr-only">LinkedIn</span>
-                </Button>
-                <Button variant="ghost" size="icon" className="hover:text-pink-500">
-                  <Instagram className="h-4 w-4" />
-                  <span className="sr-only">Instagram</span>
-                </Button>
-                <Button variant="ghost" size="icon" className="hover:text-red-500">
-                  <Mail className="h-4 w-4" />
-                  <span className="sr-only">Email</span>
+                <Button variant="ghost" size="icon" className="hover:text-red-500" asChild>
+                  <a href="mailto:info@beyondborders.org">
+                    <Mail className="h-4 w-4" />
+                    <span className="sr-only">Email</span>
+                  </a>
                 </Button>
               </div>
             </div>
