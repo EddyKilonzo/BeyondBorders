@@ -5,11 +5,11 @@ import { ThemeProvider } from '@/components/theme-provider'
 
 export const metadata: Metadata = {
   title: {
-    default: 'Beyond Borders - Refugee-Led Impact',
+    default: 'Beyond Borders - Nomadic Community-Led Impact',
     template: '%s | Beyond Borders'
   },
-  description: 'A refugee-led nonprofit bridging gaps in aid and advocacy along the Kenya-Somalia border, creating lasting change through community-driven solutions.',
-  keywords: ['refugee', 'nonprofit', 'humanitarian', 'Kenya', 'Somalia', 'border', 'aid', 'advocacy', 'community', 'development'],
+  description: 'A nomadic community-led nonprofit bridging gaps in aid and advocacy along the Kenya-Somalia border, creating lasting change through community-driven solutions.',
+  keywords: ['nomadic community', 'nonprofit', 'humanitarian', 'Kenya', 'Somalia', 'border', 'aid', 'advocacy', 'community', 'development'],
   authors: [{ name: 'Beyond Borders' }],
   creator: 'Beyond Borders',
   publisher: 'Beyond Borders',
@@ -26,8 +26,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://beyondborders.org',
-    title: 'Beyond Borders - Refugee-Led Impact',
-    description: 'A refugee-led nonprofit bridging gaps in aid and advocacy along the Kenya-Somalia border, creating lasting change through community-driven solutions.',
+    title: 'Beyond Borders - Nomadic Community-Led Impact',
+    description: 'A nomadic community-led nonprofit bridging gaps in aid and advocacy along the Kenya-Somalia border, creating lasting change through community-driven solutions.',
     siteName: 'Beyond Borders',
     images: [
       {
@@ -40,8 +40,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Beyond Borders - Refugee-Led Impact',
-    description: 'A refugee-led nonprofit bridging gaps in aid and advocacy along the Kenya-Somalia border, creating lasting change through community-driven solutions.',
+    title: 'Beyond Borders - Nomadic Community-Led Impact',
+    description: 'A nomadic community-led nonprofit bridging gaps in aid and advocacy along the Kenya-Somalia border, creating lasting change through community-driven solutions.',
     images: ['/logo_black_bg.jpg'],
     creator: '@beyondborders',
   },

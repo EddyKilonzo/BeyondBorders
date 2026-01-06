@@ -1,6 +1,6 @@
 # Beyond Borders Website 🌍
 
-A modern, responsive website for Beyond Borders - a refugee-led nonprofit organization bridging gaps in aid and advocacy along the Kenya-Somalia border.
+A modern, responsive website for Beyond Borders - a nomadic community-led nonprofit organization bridging gaps in aid and advocacy along the Kenya-Somalia border.
 
 ## 🚀 Tech Stack
 
@@ -159,6 +159,6 @@ This project is created for Beyond Borders organization.
 
 ---
 
-**Built with ❤️ for refugee-led impact**
+**Built with ❤️ for nomadic community-led impact**
 
 *Last updated: January 2025*

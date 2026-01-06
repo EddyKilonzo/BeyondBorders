@@ -3,11 +3,11 @@ import { HomePageClient } from './home-client'
 
 export const metadata: Metadata = {
   title: 'Home',
-  description: 'Beyond Borders - Empowering displaced communities through dignity and justice. A refugee-led nonprofit creating lasting change along the Kenya-Somalia border.',
-  keywords: ['refugee', 'humanitarian', 'Kenya', 'Somalia', 'border', 'aid', 'community', 'development', 'nonprofit'],
+  description: 'Beyond Borders - Empowering displaced communities through dignity and justice. A nomadic community-led nonprofit creating lasting change along the Kenya-Somalia border.',
+  keywords: ['nomadic community', 'humanitarian', 'Kenya', 'Somalia', 'border', 'aid', 'community', 'development', 'nonprofit'],
   openGraph: {
-    title: 'Beyond Borders - Refugee-Led Impact',
-    description: 'Empowering displaced communities through dignity and justice. A refugee-led nonprofit creating lasting change along the Kenya-Somalia border.',
+    title: 'Beyond Borders - Nomadic Community-Led Impact',
+    description: 'Empowering displaced communities through dignity and justice. A nomadic community-led nonprofit creating lasting change along the Kenya-Somalia border.',
     url: 'https://beyondborders.org',
     siteName: 'Beyond Borders',
     images: [
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Beyond Borders - Refugee-Led Impact',
+    title: 'Beyond Borders - Nomadic Community-Led Impact',
     description: 'Empowering displaced communities through dignity and justice.',
     images: ['/2.webp'],
   },

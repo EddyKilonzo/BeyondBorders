@@ -12,17 +12,17 @@ export function Footer() {
             <div className="space-y-4">
               <h4 className="text-lg font-semibold">About Beyond Borders</h4>
               <p className="text-sm text-muted-foreground">
-                Empowering refugee communities through sustainable development, education, and humanitarian support since 2020.
+                A nomadic non profit bridging gaps in digital media, creating platforms that preserve nomadic culture and generating sources of income for young people in arid areas.
               </p>
               <div className="flex space-x-3">
                 <Button variant="ghost" size="icon" className="hover:text-pink-500" asChild>
-                  <a href="https://www.instagram.com/beyondborders_synergy/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.instagram.com/mayhemthreads252/" target="_blank" rel="noopener noreferrer">
                     <Instagram className="h-4 w-4" />
                     <span className="sr-only">Instagram</span>
                   </a>
                 </Button>
                 <Button variant="ghost" size="icon" className="hover:text-red-500" asChild>
-                  <a href="mailto:info@beyondborders.org">
+                  <a href="mailto:info@beyondborders.co.ke">
                     <Mail className="h-4 w-4" />
                     <span className="sr-only">Email</span>
                   </a>
@@ -88,7 +88,7 @@ export function Footer() {
             <div className="space-y-4">
               <h4 className="text-lg font-semibold">Contact Us</h4>
               <div className="space-y-2 text-sm text-muted-foreground">
-                <p>Email: contact@beyondborders.org</p>
+                <p>Email: info@beyondborders.co.ke</p>
                 <p>Tel: +1 (555) 123-4567</p>
                 <address className="not-italic">
                   123 Humanitarian Way<br />

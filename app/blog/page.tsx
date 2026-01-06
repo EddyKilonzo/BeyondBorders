@@ -508,13 +508,13 @@ export default function BlogPage() {
                 </div>
               </div>
               <p className="text-white/80 leading-relaxed mb-4 sm:mb-6 max-w-md text-sm sm:text-base">
-                A refugee-led nonprofit bridging gaps in aid and advocacy along the Kenya-Somalia border.
+                A nomadic community-led nonprofit bridging gaps in aid and advocacy along the Kenya-Somalia border.
               </p>
               <div className="flex flex-wrap gap-2 sm:gap-4">
-                <a href="https://www.instagram.com/beyondborders_synergy/" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
+                <a href="https://www.instagram.com/mayhemthreads252/" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Instagram className="h-4 w-4 sm:h-5 sm:w-5 text-white group-hover:text-white" />
                 </a>
-                <a href="mailto:info@beyondborders.org" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
+                <a href="mailto:info@beyondborders.co.ke" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-white group-hover:text-white" />
                 </a>
               </div>
