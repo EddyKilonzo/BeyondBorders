@@ -153,7 +153,7 @@ export default function BlogPage() {
               </div>
               <span className="text-lg sm:text-xl font-bold">Beyond Borders</span>
             </div>
-            <div className="hidden md:flex space-x-8">
+            <div className="hidden md:flex space-x-6 lg:space-x-8">
               <Link href="/" className="hover:text-sky-400 transition-colors">
                 Home
               </Link>
@@ -162,6 +162,9 @@ export default function BlogPage() {
               </Link>
               <Link href="/projects" className="hover:text-sky-400 transition-colors">
                 Projects
+              </Link>
+              <Link href="/reports" className="hover:text-sky-400 transition-colors">
+                Reports
               </Link>
               <Link href="/blog" className="text-sky-400">
                 Blog
@@ -581,7 +584,7 @@ export default function BlogPage() {
                 <Link href="/contact" className="hover:text-sky-400 transition-colors">
                   Terms of Service
                 </Link>
-                <Link href="/projects" className="hover:text-sky-400 transition-colors">
+                <Link href="/reports" className="hover:text-sky-400 transition-colors">
                   Impact Reports
                 </Link>
               </div>

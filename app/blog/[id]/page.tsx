@@ -635,7 +635,7 @@ export default async function BlogPost({ params }: { params: Promise<{ id: strin
               </div>
               <span className="text-xl font-bold">Beyond Borders</span>
             </div>
-            <div className="hidden md:flex space-x-8">
+            <div className="hidden md:flex space-x-6 lg:space-x-8">
               <Link href="/" className="hover:text-sky-400 transition-colors">
                 Home
               </Link>
@@ -644,6 +644,9 @@ export default async function BlogPost({ params }: { params: Promise<{ id: strin
               </Link>
               <Link href="/projects" className="hover:text-sky-400 transition-colors">
                 Projects
+              </Link>
+              <Link href="/reports" className="hover:text-sky-400 transition-colors">
+                Reports
               </Link>
               <Link href="/blog" className="text-sky-400">
                 Blog
@@ -935,7 +938,7 @@ export default async function BlogPost({ params }: { params: Promise<{ id: strin
                 <Link href="/contact" className="hover:text-sky-400 transition-colors">
                   Terms of Service
                 </Link>
-                <Link href="/projects" className="hover:text-sky-400 transition-colors">
+                <Link href="/reports" className="hover:text-sky-400 transition-colors">
                   Impact Reports
                 </Link>
               </div>

@@ -61,7 +61,7 @@ export function HomePageClient() {
                 <div className="text-xs text-sky-400 font-medium">Nomadic-Led Impact</div>
               </div>
             </div>
-            <div className="hidden md:flex space-x-8">
+            <div className="hidden md:flex space-x-6 lg:space-x-8">
               <Link href="/" className="relative group py-2">
                 <span className="text-sky-400 font-medium">Home</span>
                 <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-sky-400 to-transparent"></div>
@@ -72,6 +72,10 @@ export function HomePageClient() {
               </Link>
               <Link href="/projects" className="relative group py-2 hover:text-sky-400 transition-colors">
                 <span>Projects</span>
+                <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-sky-400 to-transparent group-hover:w-full transition-all duration-300"></div>
+              </Link>
+              <Link href="/reports" className="relative group py-2 hover:text-sky-400 transition-colors">
+                <span>Reports</span>
                 <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-sky-400 to-transparent group-hover:w-full transition-all duration-300"></div>
               </Link>
               <Link href="/blog" className="relative group py-2 hover:text-sky-400 transition-colors">
@@ -512,7 +516,7 @@ export function HomePageClient() {
                 <Link href="/contact" className="hover:text-sky-400 transition-colors">
                   Terms of Service
                 </Link>
-                <Link href="/projects" className="hover:text-sky-400 transition-colors">
+                <Link href="/reports" className="hover:text-sky-400 transition-colors">
                   Impact Reports
                 </Link>
               </div>
