@@ -468,6 +468,112 @@ export const reports: Report[] = [
       'Circles can open conversation but cannot replace referral pathways for survivors needing protection, medical or psychosocial support.',
     ],
   },
+  {
+    slug: 'indigenous-digital-archive-pilot-2024',
+    reportNumber: 'Project Report',
+    title: 'Indigenous Digital Archive Pilot',
+    subtitle:
+      'Community-Controlled Digital Collection of Nomadic Heritage in Turkana and Samburu Counties',
+    summary:
+      'Twenty-five indigenous young women were trained to document, curate and govern digital records of nomadic cultural heritage. More than 40 oral histories and cultural practices were recorded — and every file stays on local devices under community control, never on commercial cloud services.',
+    excerpt:
+      '25 indigenous young women trained, 40+ oral histories documented, and the first community-controlled digital collection of nomadic heritage in the region — stored offline, governed by community protocols.',
+    category: 'Project Report',
+    categoryColor: 'bg-amber-500',
+    file: '/reports/Beyond_Borders_Indigenous_Digital_Archive_Pilot_2024.pdf',
+    fileSize: '437 KB',
+    pages: 4,
+    published: '2024',
+    publishedISO: '2024-12-01',
+    period: 'Implementation period: 2024',
+    region: 'Turkana & Samburu Counties, Northern Kenya ASAL',
+    methodology:
+      'Community-led documentation, digital storytelling training, elder-guided consent and sensitivity protocols, offline-first local storage',
+    preparedBy: 'Beyond Borders — Indigenous Young Women-Led Collective',
+    readTime: '8 min read',
+    featured: false,
+    tags: ['Digital Heritage', 'Data Sovereignty', 'Oral History', 'Offline-First', 'Archiving'],
+    image: '/3.webp',
+    stats: [
+      { value: '25', label: 'Young women trained' },
+      { value: '40+', label: 'Oral histories & practices documented' },
+      { value: '2', label: 'Counties reached' },
+      { value: '0', label: 'Files on commercial cloud services' },
+    ],
+    sections: [
+      {
+        heading: '1. Executive Summary',
+        paragraphs: [
+          'In 2024, Beyond Borders implemented the Indigenous Digital Archive Pilot in Turkana and Samburu counties. The pilot trained 25 indigenous young women in digital storytelling and community archiving methods. Participants documented more than 40 oral histories and cultural practices, creating what is understood to be the first community-controlled digital collection of nomadic heritage in the region.',
+          'Unlike extractive documentation projects, all materials are stored on local devices and governed by community archivists according to indigenous protocols around sacred knowledge. The pilot responded directly to a long history of external researchers and agencies extracting cultural knowledge without consent or local ownership, and demonstrated that indigenous young women can design and manage digital heritage systems that respect cultural boundaries while building technical skills relevant to low-connectivity ASAL contexts.',
+        ],
+      },
+      {
+        heading: '2. Background and Rationale',
+        paragraphs: [
+          'Turkana and Samburu communities hold oral histories, songs, ecological knowledge and cultural practices that have been systematically extracted by external researchers, NGOs and media. Materials are frequently stored in Global North institutions with little or no community control over access, use or interpretation.',
+          'At the same time, digital tools that could support local memory work are rarely designed for ASAL realities: intermittent connectivity, limited electricity, shared devices and low smartphone ownership outside towns. Beyond Borders identified the need for a practical alternative — training young women to document heritage themselves, store it locally, and apply indigenous protocols that distinguish sacred knowledge from material that can be shared. The pilot was designed as a proof of concept for community-controlled digital archives rather than a large-scale digitisation project.',
+        ],
+      },
+      {
+        heading: '3. Objectives',
+        bullets: [
+          { text: 'Build practical digital storytelling and archiving skills among indigenous young women from Turkana and Samburu communities.' },
+          { text: 'Document a first set of oral histories and cultural practices under community direction.' },
+          { text: 'Establish local-device storage and simple access protocols that keep sensitive material offline and under community control.' },
+          { text: 'Test whether a modest, offline-first approach could generate trust among elders after years of extractive documentation.' },
+          { text: 'Identify young women ready to continue as community archivists and peer trainers.' },
+        ],
+      },
+      {
+        heading: '4. Approach and Methods',
+        paragraphs: [
+          'Twenty-five young women aged approximately 18–28 were selected through existing community networks and prior engagement with Beyond Borders. No prior technical expertise was required.',
+          'Training combined practical digital skills with cultural protocols: basic device handling, audio recording and simple video on available phones and shared tablets; interview and storytelling techniques respectful of elders and gender dynamics; consent processes covering both collective and individual consent; distinguishing sacred or restricted knowledge from shareable material; local file organisation, basic metadata (who, where, when, language, sensitivity level) and offline backup; and discussion of digital colonialism and why local control of archives matters. Sessions were delivered in short residential or clustered formats to accommodate pastoralist mobility and household responsibilities, and adapted to local languages where possible.',
+          'Participants conducted interviews and recordings within their own communities under the guidance of the core team and cultural advisors. Materials were stored on local devices — phones, tablets and external drives managed by the collective — with no content uploaded to commercial cloud services. Access levels were agreed with elders and the young women archivists: some materials remain fully offline and restricted; others may be used for community education or limited external sharing with explicit consent.',
+        ],
+      },
+      {
+        heading: '5. Key Results and Outputs',
+        bullets: [
+          { label: 'Training', text: '25 indigenous young women trained in digital storytelling and community archiving.' },
+          { label: 'Documentation', text: 'More than 40 oral histories and cultural practices documented, including songs, ecological knowledge and historical accounts.' },
+          { label: 'Collection', text: 'A first community-controlled digital collection stored exclusively on local devices.' },
+          { label: 'Protocols', text: 'Simple classification and access protocols co-developed with elders and participants.' },
+          { label: 'Trust', text: 'Increased trust among some elders who had previously refused external documentation projects.' },
+          { label: 'Continuity', text: 'A smaller group of participants identified as ongoing community archivists and peer trainers.' },
+        ],
+      },
+      {
+        heading: '6. Challenges and Lessons Learned',
+        bullets: [
+          { label: 'Device and power constraints', text: 'Shared phones, limited battery life and scarce charging points required careful planning of recording sessions and frequent local backups.' },
+          { label: 'Connectivity assumptions', text: 'Any workflow that assumed regular internet access failed. Offline-first storage and occasional physical transfer of files proved more reliable.' },
+          { label: 'Trust recovery', text: 'Initial suspicion from elders was expected given prior extractive experiences. Consistent presence, transparent consent and visible community control of devices were essential.' },
+          { label: 'Sacred knowledge boundaries', text: 'Not all material can or should be digitised. Clear protocols for what remains offline and restricted are as important as the technical system.' },
+          { label: 'Time and mobility', text: 'Pastoralist movement and household labour limited continuous participation; clustered and residential formats worked better than weekly meetings.' },
+        ],
+        callout:
+          'Key lesson: technical training alone is insufficient. Trust, cultural protocols and realistic offline design determine whether a digital archive is adopted and sustained.',
+      },
+      {
+        heading: '7. Contribution to Beyond Borders’ Work and Looking Ahead',
+        paragraphs: [
+          'The pilot established the foundation for the Digital Heritage working circle and provided practical experience shaping the collective’s longer-term approach to community-controlled archives, offline-first tools and indigenous feminist tech. It also generated a small cohort of young women with demonstrated capacity to train others and manage local collections.',
+          'Future work will deepen the existing collection, strengthen community archivist skills, and explore lightweight offline platforms that remain under local control. The emphasis will continue to be quality of process and community ownership rather than volume of digitised material. Any expansion will prioritise solar-supported local storage and clear protocols that protect sacred knowledge.',
+        ],
+        callout:
+          'This report is intended for internal reflection, partner learning and accountable documentation of community-led work. It does not claim to represent the full diversity of Turkana or Samburu heritage, nor does it replace ongoing community governance of the archives.',
+      },
+    ],
+    keyFindings: [
+      'Indigenous young women can lead both the technical and cultural dimensions of digital memory work — external technical expertise was not the limiting factor.',
+      'Offline-first is not a compromise in ASAL contexts; it is the only workflow that survives intermittent connectivity, shared devices and scarce power.',
+      'Trust is rebuilt through visible community control of the devices and the archive, not through consent forms alone.',
+      'Protocols defining what must never be digitised are as central to the archive as the recording and storage system itself.',
+      'Quality of process and community ownership matter more than volume — a modest, well-governed collection earns participation that a large extractive one cannot.',
+    ],
+  },
 ]
 
 export function getReport(slug: string): Report | undefined {

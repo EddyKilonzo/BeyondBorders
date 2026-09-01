@@ -16,7 +16,7 @@ export function Footer() {
               </p>
               <div className="flex space-x-3">
                 <Button variant="ghost" size="icon" className="hover:text-pink-500" asChild>
-                  <a href="https://www.instagram.com/mayhemthreads252/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.instagram.com/beyondborders_synergy/" target="_blank" rel="noopener noreferrer">
                     <Instagram className="h-4 w-4" />
                     <span className="sr-only">Instagram</span>
                   </a>

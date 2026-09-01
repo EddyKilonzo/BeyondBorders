@@ -422,7 +422,7 @@ export default function ReportsPage() {
               </p>
               <div className="flex flex-wrap gap-2 sm:gap-4">
                 <a
-                  href="https://www.instagram.com/mayhemthreads252/"
+                  href="https://www.instagram.com/beyondborders_synergy/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group"

@@ -755,7 +755,7 @@ export default async function BlogPost({ params }: { params: Promise<{ id: strin
                   <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Share this article</h3>
                   <div className="flex flex-wrap gap-2 sm:gap-4">
                     <Button size="sm" variant="outline" className="hover:bg-sky-400 hover:text-white text-xs sm:text-sm" asChild>
-                      <a href="https://www.instagram.com/mayhemthreads252/" target="_blank" rel="noopener noreferrer">
+                      <a href="https://www.instagram.com/beyondborders_synergy/" target="_blank" rel="noopener noreferrer">
                         <Instagram className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2" />
                         Instagram
                       </a>
@@ -871,7 +871,7 @@ export default async function BlogPost({ params }: { params: Promise<{ id: strin
                 A nomadic-led nonprofit bridging gaps in aid and advocacy along the Kenya-Somalia border.
               </p>
               <div className="flex space-x-4">
-                <a href="https://www.instagram.com/mayhemthreads252/" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
+                <a href="https://www.instagram.com/beyondborders_synergy/" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Instagram className="h-5 w-5 text-white group-hover:text-white" />
                 </a>
                 <a href="mailto:info@beyondborders.co.ke" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">

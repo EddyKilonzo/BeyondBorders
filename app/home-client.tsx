@@ -431,7 +431,7 @@ export function HomePageClient() {
                 A nomadic non profit bridging gaps in digital media, creating platforms that preserve nomadic culture and generating sources of income for young people in arid areas
               </p>
               <div className="flex space-x-4">
-                <a href="https://www.instagram.com/mayhemthreads252/" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
+                <a href="https://www.instagram.com/beyondborders_synergy/" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">
                   <Instagram className="h-5 w-5 text-white group-hover:text-white" />
                 </a>
                 <a href="mailto:info@beyondborders.co.ke" className="bg-white/10 hover:bg-sky-400 p-2 rounded-lg transition-colors duration-300 group">

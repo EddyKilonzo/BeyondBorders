@@ -597,7 +597,7 @@ export default async function ReportDetailPage({
               </p>
               <div className="flex flex-wrap gap-2 sm:gap-4">
                 <a
-                  href="https://www.instagram.com/mayhemthreads252/"
+                  href="https://www.instagram.com/beyondborders_synergy/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group rounded-lg bg-white/10 p-2 transition-colors duration-300 hover:bg-sky-400"
