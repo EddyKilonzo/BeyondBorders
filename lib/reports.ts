@@ -574,6 +574,428 @@ export const reports: Report[] = [
       'Quality of process and community ownership matter more than volume — a modest, well-governed collection earns participation that a large extractive one cannot.',
     ],
   },
+  {
+    slug: 'feminism-and-tech-asal-region',
+    reportNumber: 'Project Report',
+    title: 'Feminism & Tech in the ASAL Region',
+    subtitle:
+      'How Feminist Principles Reshape Technology Design, Access and Governance in Arid and Semi-Arid Lands',
+    summary:
+      'Twenty-eight indigenous young women from Turkana, Samburu and Isiolo examined how technology intersects with patriarchy, colonial data practices and pastoralist marginalisation — and authored the ASAL Feminist Tech Principles, a community framework insisting technology be collective, consent-based, offline-capable and governed by women.',
+    excerpt:
+      '28 young women, three counties, and a 10-point community-authored framework for feminist technology in the ASAL region.',
+    category: 'Project Report',
+    categoryColor: 'bg-rose-500',
+    file: '/reports/Beyond_Borders_Feminism_and_Tech_Report.pdf',
+    fileSize: '337 KB',
+    pages: 4,
+    published: '2025',
+    publishedISO: '2025-03-01',
+    period: 'Implementation period: 2025',
+    region: 'Turkana, Samburu & Isiolo Counties, Northern Kenya ASAL',
+    methodology:
+      'Women-only feminist tech labs, participatory principle development with elders, advocacy training and county forum engagement',
+    preparedBy: 'Beyond Borders — Indigenous Young Women-Led Collective',
+    readTime: '8 min read',
+    featured: false,
+    tags: ['Feminist Tech', 'Governance', 'Digital Rights', 'Advocacy', 'Consent'],
+    image: '/1.webp',
+    stats: [
+      { value: '28', label: 'Young women participants' },
+      { value: '3', label: 'Counties' },
+      { value: '1', label: 'Feminist tech framework' },
+      { value: '8', label: 'New feminist tech advocates' },
+    ],
+    sections: [
+      {
+        heading: '1. Executive Summary',
+        paragraphs: [
+          'In March 2025, Beyond Borders launched Feminism & Tech in the ASAL Region, a project exploring how feminist principles can reshape technology design, access and governance in arid and semi-arid lands. The project brought together 28 indigenous young women from Turkana, Samburu and Isiolo communities to examine how technology intersects with patriarchy, colonial data practices and pastoralist marginalisation — and to prototype alternatives.',
+          'The project produced the ASAL Feminist Tech Principles, a community-authored framework insisting that technology in indigenous contexts must be collective, consent-based, offline-capable and governed by women. It also trained a cohort of young women to advocate for feminist technology policies at community and county levels, challenging the male-dominated tech spaces that typically exclude pastoralist women.',
+        ],
+      },
+      {
+        heading: '2. Background and Rationale',
+        paragraphs: [
+          'Technology spaces in Kenya — from innovation hubs to policy forums — remain overwhelmingly male, urban and disconnected from pastoralist realities. In ASAL regions this gender gap is compounded by nomadic mobility, low formal schooling and patriarchal control over household resources including phones. Women are frequently the last to access devices, the least consulted about tech projects, and the most vulnerable when data is extracted without consent.',
+          'Beyond Borders recognised that “closing the gender digital divide” requires more than handing women smartphones. It requires interrogating whose technology, whose data and whose control. This project treated feminism not as an add-on to tech training, but as a foundational design ethic — centring care, collective ownership and the right to refuse.',
+        ],
+      },
+      {
+        heading: '3. Objectives',
+        bullets: [
+          { text: 'Develop, through participatory process, a set of Feminist Tech Principles appropriate to ASAL indigenous contexts.' },
+          { text: 'Train indigenous young women to analyse and challenge patriarchal and colonial patterns in existing technology projects.' },
+          { text: 'Create safe digital and physical spaces for women to experiment with technology without male oversight or judgment.' },
+          { text: 'Support participants to advocate for feminist technology governance at community and county levels.' },
+          { text: 'Document how feminist leadership changes the outcomes of tech adoption in pastoralist settings.' },
+        ],
+      },
+      {
+        heading: '4. Approach and Methods',
+        bullets: [
+          { label: 'Feminist tech labs', text: 'Monthly women-only gatherings combined practical skills — audio recording, offline mapping, basic device repair — with feminist analysis of digital colonialism, surveillance and algorithmic bias. Spaces were deliberately free of male participants to enable open discussion of gendered barriers.' },
+          { label: 'Principle development', text: 'Over six months, participants and elders co-developed the ASAL Feminist Tech Principles through story-sharing, case analysis of failed tech projects and collective drafting. The principles address collective consent, offline-first design, sacred knowledge protection, shared-device equity and women’s governance of community data.' },
+          { label: 'Advocacy training', text: 'Participants learned to present the principles to community elders, women’s groups and county officials. Eight women were supported to join or observe county technology and gender forums.' },
+        ],
+      },
+      {
+        heading: '5. Key Results and Outputs',
+        bullets: [
+          { label: 'Framework', text: 'The ASAL Feminist Tech Principles: a 10-point community-authored framework.' },
+          { label: 'Training', text: '28 young women trained in feminist technology analysis and practical digital skills.' },
+          { label: 'Safe spaces', text: 'Six women-only tech labs established as ongoing safe spaces.' },
+          { label: 'Advocacy', text: '12 advocacy presentations to community and county audiences.' },
+          { label: 'Discourse shift', text: 'Technology is now discussed in women’s groups as a site of power and choice, not just consumption.' },
+          { label: 'Refusal capacity', text: 'Increased confidence among women to refuse tech projects that lack consent protocols.' },
+        ],
+      },
+      {
+        heading: '6. Challenges and Lessons Learned',
+        bullets: [
+          { label: 'Backlash and ridicule', text: 'Some men and external actors dismissed the project as “unnecessary” or “political”. Consistent community grounding and elder support were essential defences.' },
+          { label: 'Safety concerns', text: 'Women-only tech spaces required careful location selection to avoid harassment or gossip-based retaliation.' },
+          { label: 'Donor timelines', text: 'Participatory principle development is slow. Rushed funding cycles pressure communities to skip consent and governance steps.' },
+          { label: 'Intersecting marginalisation', text: 'Stateless women and women from minority clans faced additional barriers even within women’s spaces. Intersectional attention is ongoing.' },
+          { label: 'Digital feminism is not urban feminism', text: 'ASAL feminist tech must account for oral culture, collective identity and mobility — not import frameworks from Nairobi or Silicon Valley.' },
+        ],
+        callout:
+          'Key lesson: Feminist technology in ASAL regions is not about catching women up to existing systems. It is about redesigning systems so that indigenous women’s knowledge, labour and governance are centred from the start.',
+      },
+      {
+        heading: '7. Contribution and Looking Ahead',
+        paragraphs: [
+          'This project consolidated Beyond Borders’ identity as an indigenous feminist tech collective. The ASAL Feminist Tech Principles now govern all collective digital projects and are used to screen partnerships. The women-only lab model is being replicated, and the advocacy cohort is reshaping how the collective engages with county and national technology policy spaces.',
+          'Beyond Borders will disseminate the Feminist Tech Principles more widely, translate them into additional local languages, and establish a feminist tech fellowship for emerging indigenous women leaders. The collective will also continue building alliances with feminist tech movements globally while insisting that ASAL realities remain central to any shared framework.',
+        ],
+      },
+    ],
+    keyFindings: [
+      'Handing women devices does not close the gender digital divide; control over technology, data and governance does.',
+      'Women-only tech spaces were the precondition for open discussion of gendered barriers to technology.',
+      'Participatory principle development cannot be compressed into short donor cycles without sacrificing consent.',
+      'Feminist frameworks imported from urban or Global North contexts do not fit oral, collective, mobile pastoralist life.',
+      'Once women held a shared framework, they successfully challenged male-dominated decisions about shared device access.',
+    ],
+  },
+  {
+    slug: 'breaking-barriers-indigenous-tech-solutions',
+    reportNumber: 'Project Report',
+    title: 'Breaking Barriers',
+    subtitle:
+      'Implementing Tech Solutions for Indigenous Communities in Northern Kenya',
+    summary:
+      'A pilot testing three low-cost, offline-first technology solutions — offline mapping, solar-powered community radio linkages and SMS market information — deployed and maintained entirely by 22 indigenous young women across six settlement hubs.',
+    excerpt:
+      '22 women implementers, three tested tech solutions and six community-run hubs that sustained operation for 8+ months without a single external technical visit.',
+    category: 'Project Report',
+    categoryColor: 'bg-emerald-500',
+    file: '/reports/Beyond_Borders_Indigenous_Tech_Report.pdf',
+    fileSize: '261 KB',
+    pages: 5,
+    published: 'September 2025',
+    publishedISO: '2025-09-01',
+    period: 'Implementation period: September 2025',
+    region: 'Turkana & Samburu Counties, Northern Kenya ASAL',
+    methodology:
+      'Community tool selection, practical deployment training, six settlement hub pilots, women-majority technology management committees',
+    preparedBy: 'Beyond Borders — Indigenous Young Women-Led Collective',
+    readTime: '9 min read',
+    featured: false,
+    tags: ['Appropriate Tech', 'Offline-First', 'Solar Power', 'Mapping', 'Market Access'],
+    image: '/5.webp',
+    stats: [
+      { value: '22', label: 'Young women implementers' },
+      { value: '3', label: 'Tech solutions tested' },
+      { value: '6', label: 'Settlement hubs reached' },
+      { value: '100%', label: 'Locally maintained' },
+    ],
+    sections: [
+      {
+        heading: '1. Executive Summary',
+        paragraphs: [
+          'In September 2025, Beyond Borders implemented Breaking Barriers, a pilot project testing practical, low-cost technology solutions designed specifically for indigenous pastoralist communities in Northern Kenya. The project trained 22 young women to deploy, manage and adapt three core tools: offline mapping applications for resource tracking, solar-powered community radio linkages, and simple digital market-information systems.',
+          'Unlike standard tech-for-development models, Breaking Barriers required that every solution be maintainable without external technical support, function without reliable internet, and remain under community governance. The pilot demonstrated that barriers to technology are not primarily about innovation — they are about design fit. When tools are adapted to low-connectivity, mobile, oral-culture contexts, and when indigenous women manage them, adoption rates increase and community trust is preserved.',
+        ],
+      },
+      {
+        heading: '2. Background and Rationale',
+        paragraphs: [
+          'Pastoralist communities in Northern Kenya face persistent barriers to information and communication: drought early warnings often arrive too late, women livestock traders lack market price data, and conflict mediation suffers from poor coordination across vast territories. Conventional tech solutions — smartphone apps, cloud-based platforms, biometric systems — assume levels of connectivity, literacy and individual device ownership that do not exist in most ASAL settlements.',
+          'Beyond Borders designed Breaking Barriers to test whether appropriately simple, offline-first, collectively managed technologies could address these gaps without replicating patterns of dependency or extraction. The project focused on tools that could be repaired locally, powered by solar energy, and operated by women who understand both the technology and the social context.',
+        ],
+      },
+      {
+        heading: '3. Objectives',
+        bullets: [
+          { text: 'Test three appropriate technology solutions in real pastoralist settlement conditions.' },
+          { text: 'Train a cohort of indigenous young women as technology implementers and troubleshooters.' },
+          { text: 'Assess whether community-managed tech hubs can sustain operation without permanent external technical support.' },
+          { text: 'Document which barriers — power, connectivity, literacy, gender norms — are most decisive for each tool type.' },
+          { text: 'Establish maintenance and governance protocols that keep technology under local control.' },
+        ],
+      },
+      {
+        heading: '4. Approach and Methods',
+        bullets: [
+          { label: 'Offline mapping', text: 'Mapeo and paper-digital hybrid methods for tracking grazing, water points and conflict-sensitive areas.' },
+          { label: 'Community radio', text: 'Solar-powered linkages connecting settlement hubs to existing FM stations for drought and market alerts.' },
+          { label: 'SMS market information', text: 'Basic feature phones used to share livestock prices between women traders.' },
+          { label: 'Training and deployment', text: '22 young women trained in device management, solar charging systems, basic troubleshooting and collective governance of shared equipment, then deployed across six settlement hubs.' },
+          { label: 'Governance', text: 'Each hub established a women-majority technology management committee responsible for device care, access scheduling and malfunction reporting. No data was uploaded to external servers without explicit collective consent.' },
+        ],
+      },
+      {
+        heading: '5. Key Results and Outputs',
+        bullets: [
+          { label: 'Hubs', text: 'Six functional community tech hubs operating across Turkana and Samburu counties.' },
+          { label: 'Implementers', text: '22 young women trained as technology implementers capable of basic hardware troubleshooting and workflow adaptation.' },
+          { label: 'Documentation', text: 'Three tested and documented tech solutions with ASAL-adapted user guides in Kiswahili and Turkana.' },
+          { label: 'Market access', text: 'Improved market information flow among women livestock traders in four settlement clusters.' },
+          { label: 'Sustainability', text: 'Community-managed hubs sustained operation for 8+ months without external technical visits.' },
+          { label: 'Negotiating power', text: 'Increased confidence among women in negotiating with male-dominated livestock markets using price data.' },
+        ],
+      },
+      {
+        heading: '6. Challenges and Lessons Learned',
+        bullets: [
+          { label: 'Hardware durability', text: 'Dust, heat and rough transport damaged equipment faster than anticipated. Ruggedised or locally repairable devices are essential.' },
+          { label: 'Solar dependency', text: 'Extended cloudy periods reduced charging capacity. Hybrid power strategies — solar plus hand-crank or pedal options — warrant exploration.' },
+          { label: 'Feature phone persistence', text: 'Smartphones remain scarce; SMS and voice-based solutions reached far more people than app-based tools.' },
+          { label: 'Gendered time poverty', text: 'Women could not attend hub sessions during peak livestock or water-fetching periods. Scheduling must align with pastoralist labour calendars.' },
+          { label: 'External assumptions die hard', text: 'Some partner organisations continued pushing app-based solutions that failed in testing. Community implementers needed advocacy skills to resist inappropriate donor preferences.' },
+        ],
+        callout:
+          'Key lesson: The barrier is rarely the community. The barrier is technology designed for radically different contexts. Breaking barriers means redesigning the tool, not demanding the environment change.',
+      },
+      {
+        heading: '7. Contribution and Looking Ahead',
+        paragraphs: [
+          'Breaking Barriers proved that indigenous young women can implement and sustain technology in some of Kenya’s most infrastructure-poor regions. It generated practical toolkits, maintenance protocols and evidence that now anchor the collective’s partnerships and advocacy, confirming that Beyond Borders’ offline-first, community-governed approach is not a limitation but a design strength.',
+          'Beyond Borders will expand the hub network, deepen repair and maintenance training, and explore mesh networking for inter-settlement communication. All future tool adoption will be filtered through the Breaking Barriers criteria: offline-capable, locally maintainable, collectively governed and gender-responsive.',
+        ],
+      },
+    ],
+    keyFindings: [
+      'Offline-first tools consistently outperformed cloud-dependent alternatives in ASAL conditions.',
+      'SMS and voice-based solutions reached far more people than app-based tools, because smartphones remain scarce.',
+      'Community-managed hubs operated for over eight months with no external technical visits.',
+      'Environmental durability — dust, heat, transport — is a more decisive constraint than software capability.',
+      'Adoption failures trace to design fit, not community capacity or willingness.',
+    ],
+  },
+  {
+    slug: 'limited-access-technology-impact',
+    reportNumber: 'Research Report',
+    title: 'The Impact of Technology on Communities with Limited Access',
+    subtitle:
+      'Participatory Action Research on Technology Resources, Skills and Knowledge in Indigenous Pastoralist Communities',
+    summary:
+      'Thirty indigenous young women and twelve elders across Turkana, Samburu and Marsabit mapped technology gaps, documented lived experiences of digital exclusion, and co-designed realistic pathways to meaningful inclusion — producing a community-authored Technology Impact Assessment covering 15 settlements.',
+    excerpt:
+      '30 young women researchers, 12 elders, 15 settlements audited, and a community-authored evidence base on what digital exclusion actually looks like in the ASAL.',
+    category: 'Research Report',
+    categoryColor: 'bg-violet-500',
+    file: '/reports/Beyond_Borders_Limited_Access_Report.pdf',
+    fileSize: '339 KB',
+    pages: 4,
+    published: 'February 2026',
+    publishedISO: '2026-02-01',
+    period: 'Research conducted 2024 – 2025',
+    region: 'Turkana, Samburu & Marsabit Counties, Northern Kenya ASAL',
+    methodology:
+      'Community technology audits, recorded story circles, five-day critical digital literacy residentials, separate elder consultations, offline-first data storage',
+    preparedBy: 'Beyond Borders — Indigenous Young Women-Led Collective',
+    readTime: '9 min read',
+    featured: false,
+    tags: ['Digital Divide', 'Participatory Research', 'Digital Literacy', 'Data Sovereignty', 'Infrastructure'],
+    image: '/7.webp',
+    stats: [
+      { value: '30', label: 'Young women researchers' },
+      { value: '12', label: 'Elders consulted' },
+      { value: '3', label: 'Counties reached' },
+      { value: '85%', label: 'Report increased digital confidence' },
+    ],
+    sections: [
+      {
+        heading: '1. Executive Summary',
+        paragraphs: [
+          'In 2024–2025, Beyond Borders conducted a participatory action research project examining how technology impacts indigenous pastoralist communities who possess limited access to devices, electricity, digital literacy training and internet connectivity. The project engaged 30 indigenous young women and 12 community elders across Turkana, Samburu and Marsabit counties to map technology gaps, document lived experiences of digital exclusion, and co-design realistic pathways for meaningful inclusion.',
+          'The research confirmed that technology is not neutral in ASAL contexts. Without community control, external tech interventions often replicate extractive patterns: data is harvested, infrastructure is abandoned, and local knowledge is displaced by incompatible platforms. Conversely, when indigenous women lead technology adoption, tools are adapted to pastoralist mobility, oral traditions and collective decision-making.',
+        ],
+      },
+      {
+        heading: '2. Background and Rationale',
+        paragraphs: [
+          'Northern Kenya’s ASAL communities are among the most digitally excluded populations in East Africa. National connectivity statistics mask deep rural inequalities: mobile network coverage is intermittent, smartphone ownership is concentrated among men and youth in market towns, and digital literacy programmes rarely reach nomadic households. External technology projects — from biometric registration to mobile money pilots — have frequently been designed in Nairobi or international capitals with little consultation, leading to tool abandonment, data vulnerabilities and community distrust.',
+          'Beyond Borders initiated this project to centre indigenous voices in debates about technology and development. Rather than measuring impact through device penetration or app downloads, the collective asked: what does technology mean for communities whose primary resources are mobility, oral memory and ecological knowledge? The project treated digital exclusion not as a deficit to be fixed, but as a structural condition requiring structural — and culturally grounded — responses.',
+        ],
+      },
+      {
+        heading: '3. Objectives',
+        bullets: [
+          { text: 'Map the actual distribution of technology resources, skills and knowledge across pastoralist settlements in three counties.' },
+          { text: 'Document community experiences of extractive or inappropriate tech interventions.' },
+          { text: 'Build critical digital literacy among indigenous young women, enabling them to assess technology proposals rather than simply consume them.' },
+          { text: 'Co-design, with elders and participants, principles for ethical technology engagement in ASAL contexts.' },
+          { text: 'Produce a community-authored evidence base to inform future advocacy and partnership negotiations.' },
+        ],
+      },
+      {
+        heading: '4. Approach and Methods',
+        paragraphs: [
+          'Thirty young women aged 18–30 were selected through community networks, prioritising those with existing roles in women’s groups, peace committees or livestock marketing associations. Twelve male and female elders were engaged separately to capture intergenerational perspectives on technology and cultural change. All materials were stored on local devices under community control, consistent with Beyond Borders’ offline-first protocol.',
+        ],
+        bullets: [
+          { label: 'Community technology audits', text: 'Participants inventoried devices, charging points, network availability and existing digital practices in their settlements.' },
+          { label: 'Story circles', text: 'Facilitated discussions recorded, with consent, community experiences of failed tech projects, mobile money fraud, biometric registration and distance learning.' },
+          { label: 'Critical digital literacy workshops', text: 'Five-day residential sessions covering how the internet works, data privacy basics, algorithmic bias, and how to evaluate whether a technology serves community interests.' },
+          { label: 'Elder consultations', text: 'Separate dialogues exploring how technology intersects with sacred knowledge, gender norms and pastoralist mobility.' },
+        ],
+      },
+      {
+        heading: '5. Key Results and Outputs',
+        bullets: [
+          { label: 'Assessment', text: 'A community-authored Technology Impact Assessment covering 15 settlements across three counties.' },
+          { label: 'Training', text: '30 young women trained in critical digital literacy and participatory research methods.' },
+          { label: 'Principles', text: 'A set of community-developed principles for ethical tech engagement in ASAL areas.' },
+          { label: 'Documentation', text: '18 recorded story-circle sessions documenting lived experiences of digital exclusion and extractive tech.' },
+          { label: 'Assessors', text: '8 participants identified as ready to serve as community technology assessors for future projects.' },
+          { label: 'Advocacy', text: 'Evidence base now used by participants to engage county government and NGO partners on connectivity infrastructure demands.' },
+        ],
+      },
+      {
+        heading: '6. Challenges and Lessons Learned',
+        bullets: [
+          { label: 'Infrastructure gaps are deeper than assumed', text: 'Many settlements lack any reliable charging point within a two-hour walk. Solar solutions are essential but require maintenance knowledge.' },
+          { label: '“Digital literacy” must include critical analysis', text: 'Teaching women to use apps without teaching them to question data extraction leaves them vulnerable.' },
+          { label: 'Gendered device ownership', text: 'In most households men control the primary smartphone. Women’s access is borrowed and monitored. Tech design must account for shared-device realities.' },
+          { label: 'Elder suspicion is rational and protective', text: 'Prior bad experiences with biometric and research projects meant trust-building took longer than anticipated.' },
+          { label: 'Connectivity assumptions distort design', text: 'Any intervention assuming regular internet access failed in practice. Offline-capable, low-bandwidth tools are non-negotiable.' },
+        ],
+        callout:
+          'Key lesson: Technology impact cannot be separated from power. Meaningful access requires not just devices and networks, but community control over what is collected, who owns the data, and which knowledge systems are privileged.',
+      },
+      {
+        heading: '7. Contribution to Beyond Borders’ Work',
+        paragraphs: [
+          'This project established Beyond Borders’ Technology & Power working circle and provided the collective with a critical lens for evaluating all future digital partnerships. It demonstrated that indigenous young women can author sophisticated technology assessments and that communities can shift from passive recipients to informed negotiators of tech interventions.',
+        ],
+      },
+    ],
+    keyFindings: [
+      'National connectivity statistics mask the depth of rural ASAL exclusion; settlement-level audits tell a different story.',
+      'Many settlements have no reliable charging point within a two-hour walk.',
+      'Women’s device access is overwhelmingly borrowed and monitored, not owned.',
+      'Digital literacy without critical analysis of data extraction leaves communities more exposed, not less.',
+      'Elder suspicion of technology projects is a rational response to prior extractive research and registration schemes.',
+    ],
+  },
+  {
+    slug: 'open-source-opening-the-frontier',
+    reportNumber: 'Project Report',
+    title: 'How Open-Source Digital Tools Are Opening Up the Frontier',
+    subtitle:
+      'Community-Governed Open-Source Deployment in Northern Kenya’s Pastoralist Frontier',
+    summary:
+      'Twenty indigenous young women were trained to deploy, adapt and locally govern four open-source tools — Mapeo, KoboToolbox, Syncthing and Jitsi Meet — creating 35+ community records with zero uploads to corporate cloud services.',
+    excerpt:
+      '20 women trained, four open-source tools tested, 35+ community records created, and not a single file passed through a commercial cloud.',
+    category: 'Project Report',
+    categoryColor: 'bg-teal-500',
+    file: '/reports/Beyond_Borders_Open_Source_Report.pdf',
+    fileSize: '339 KB',
+    pages: 4,
+    published: '2025',
+    publishedISO: '2025-06-01',
+    period: 'Implementation period: 2024 – 2025',
+    region: 'Turkana & Samburu Counties, Northern Kenya ASAL',
+    methodology:
+      'Community tool selection, hands-on installation and troubleshooting workshops, offline and peer-to-peer deployment, local governance protocols',
+    preparedBy: 'Beyond Borders — Indigenous Young Women-Led Collective',
+    readTime: '8 min read',
+    featured: false,
+    tags: ['Open Source', 'Digital Sovereignty', 'Offline-First', 'Mapping', 'Privacy'],
+    image: '/ac.jpg',
+    stats: [
+      { value: '20', label: 'Young women trained' },
+      { value: '4', label: 'Open-source tools tested' },
+      { value: '35+', label: 'Community records created' },
+      { value: '0', label: 'Corporate cloud uploads' },
+    ],
+    sections: [
+      {
+        heading: '1. Executive Summary',
+        paragraphs: [
+          'In 2024–2025, Beyond Borders piloted the use of open-source digital tools to address information and communication gaps in Northern Kenya’s pastoralist frontier. The project trained 20 indigenous young women to deploy, adapt and locally govern open-source applications for mapping, storytelling and secure communication — tools that are free to use, modifiable, and free from corporate data extraction.',
+          'The pilot demonstrated that open-source tools can bypass the proprietary lock-in and surveillance risks of commercial platforms while remaining adaptable to low-connectivity, mobile pastoralist contexts. When combined with community governance and offline-first workflows, open-source becomes not just a technical choice but a political one: a refusal of digital colonialism and an assertion of local control over community data and knowledge.',
+        ],
+      },
+      {
+        heading: '2. Background and Rationale',
+        paragraphs: [
+          'Pastoralist communities in Northern Kenya have historically been “opened up” by external forces — colonial administrators, researchers, NGOs and now technology corporations — each extracting data, labour or knowledge while offering limited lasting benefit. Commercial digital platforms, even when nominally free, impose terms of service that few community members can read or negotiate, harvest behavioural data, and can terminate access without recourse.',
+          'Open-source software offers a structural alternative: code that is publicly inspectable, modifiable and deployable without licensing fees or corporate control. However, open-source tools are rarely designed with ASAL realities in mind, and technical support is typically available only to those with internet access and English fluency. Beyond Borders designed this pilot to bridge that gap — training indigenous young women to become the local adapters and maintainers of open-source tools in frontier contexts.',
+        ],
+      },
+      {
+        heading: '3. Objectives',
+        bullets: [
+          { text: 'Introduce and test open-source tools relevant to pastoralist community needs — mapping, archiving, communication.' },
+          { text: 'Train indigenous young women to install, configure and troubleshoot open-source applications on local devices.' },
+          { text: 'Assess whether open-source tools can function reliably in low-connectivity, low-power ASAL conditions.' },
+          { text: 'Establish community governance protocols that keep open-source deployments under local control and free from external data extraction.' },
+          { text: 'Document the political and practical dimensions of choosing open-source in indigenous contexts.' },
+        ],
+      },
+      {
+        heading: '4. Approach and Methods',
+        bullets: [
+          { label: 'Mapeo', text: 'Offline collaborative mapping for resource and territory documentation.' },
+          { label: 'KoboToolbox', text: 'Offline data collection for community surveys and oral history metadata.' },
+          { label: 'Syncthing', text: 'Peer-to-peer file sync for secure, device-to-device transfer without cloud servers, configured for local mesh networks rather than internet-dependent sync.' },
+          { label: 'Jitsi Meet', text: 'Self-hosted video conferencing for occasional inter-settlement meetings when connectivity permits.' },
+          { label: 'Training', text: '20 young women participated in hands-on workshops covering installation, offline configuration, basic troubleshooting and the ethical rationale for open-source — emphasising that these tools belong to no corporation and can be modified to fit community needs.' },
+        ],
+      },
+      {
+        heading: '5. Key Results and Outputs',
+        bullets: [
+          { label: 'Training', text: '20 young women trained as open-source tool adapters and community support providers.' },
+          { label: 'Records', text: '35+ community records — maps, oral history metadata, survey data — created using open-source platforms.' },
+          { label: 'Toolkits', text: 'Four fully offline-capable toolkits with ASAL-adapted user guides in local languages.' },
+          { label: 'Policy', text: 'A community policy committing Beyond Borders to open-source and local-data principles for all future digital work.' },
+          { label: 'Extraction eliminated', text: 'Corporate data extraction removed entirely from documented community knowledge workflows.' },
+          { label: 'Refusal capacity', text: 'Local capacity to refuse proprietary platforms when they do not serve community interests.' },
+        ],
+      },
+      {
+        heading: '6. Challenges and Lessons Learned',
+        bullets: [
+          { label: 'Technical documentation is exclusionary', text: 'Most open-source guides assume English fluency and urban technical literacy. Local-language, visual and oral training methods were essential adaptations.' },
+          { label: 'Device limitations', text: 'Some open-source tools require more processing power or memory than available on older shared phones. Lightweight alternatives must always be prioritised.' },
+          { label: 'Occasional connectivity is still a challenge', text: 'Even peer-to-peer sync requires occasional proximity or local network access. Manual transfer via SD cards and external drives remained necessary for some settlements.' },
+          { label: 'The “free” myth', text: 'Open-source is free as in freedom, not always free as in cost. Local support, training and maintenance require time and resources that must be funded.' },
+          { label: 'Resistance from partners', text: 'Some institutional partners preferred familiar proprietary platforms. Community open-source advocates needed negotiation skills to maintain collective standards.' },
+        ],
+        callout:
+          'Key lesson: Open-source is not a magic solution, but it shifts power. When indigenous women control the tools, the frontier is opened on community terms — not by external extraction, but by local digital sovereignty.',
+      },
+      {
+        heading: '7. Contribution to Beyond Borders’ Work',
+        paragraphs: [
+          'This project established open-source and digital sovereignty as core pillars of Beyond Borders’ technology strategy. It proved that frontier communities need not accept the platforms offered by corporations or distant governments; they can build, adapt and govern their own. The trained cohort now serves as internal technical support for all collective digital projects.',
+        ],
+      },
+    ],
+    keyFindings: [
+      'Open-source deployment eliminated corporate data extraction from community knowledge workflows entirely.',
+      'Indigenous women managed complex software configuration without external engineers.',
+      'Open-source documentation assumes English fluency and urban technical literacy — local-language and oral training were required adaptations.',
+      'Peer-to-peer sync still needs proximity; manual transfer by SD card remained necessary in some settlements.',
+      'Open-source is free as in freedom, not as in cost — training and maintenance must be funded.',
+    ],
+  },
 ]
 
 export function getReport(slug: string): Report | undefined {
